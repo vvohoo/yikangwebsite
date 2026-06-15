@@ -143,14 +143,14 @@ footer{background:var(--g1);color:rgba(255,255,255,.8);padding:44px 0 56px}
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <div class="brand-logo"><img src="image/yklogo.png" alt="益康家政Logo" width="40" height="40" onerror="this.onerror=null;this.parentNode.innerHTML='<svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#166534"/><path d="M10 10 16 22 16 32" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 10v22" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 21l7-7M24 21l7 9" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>'"></div>
+      <div class="brand-logo"><img src="image/yklogo.png" alt="益康家政Logo" width="40" height="40" id="nav-logo" style="width:100%;height:100%;object-fit:contain"><rect width="40" height="40" rx="10" fill="#166534"/><path d="M10 10 16 22 16 32" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 10v22" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 21l7-7M24 21l7 9" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>'"></div>
       <div>
         <div class="brand-name">益康家政</div>
         <div class="brand-slogan">选益康，更健康</div>
       </div>
     </a>
     <nav class="nav-links" aria-label="主导航">
-      <a href="index.html#services">服务项目</a>
+      <a href="index.html#services" style="display:block">服务项目</a>
       <a href="index.html#pricing">收费标准</a>
       <a href="index.html#certs">资质团队</a>
       <a href="index.html#process">接单流程</a>
@@ -354,7 +354,7 @@ footer{background:var(--g1);color:rgba(255,255,255,.8);padding:44px 0 56px}
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-col">
-        <div class="foot-brand"><img src="image/yklogo.png" alt="益康" width="36" height="36" onerror="this.onerror=null;this.parentNode.innerHTML='<svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#166534"/><path d="M10 10 16 22 16 32" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 10v22" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 21l7-7M24 21l7 9" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>'"><span>益康家政</span></div>
+        <div class="foot-brand"><img src="image/yklogo.png" alt="益康" width="36" height="36" id="foot-logo" style="flex-shrink:0;border-radius:9px;background:#fff;padding:2px;object-fit:contain"><span>益康家政</span></div>
         <div class="foot-slogan">选益康，更健康</div>
         <p>成立于2017年，专注昆山地区医院陪护、住家护理、保洁及家政服务。17名持证专业护工，24小时全年响应。</p>
         <p style="margin-top:8px">统一信用代码：91320583MA1T60CC2J</p>
@@ -362,10 +362,10 @@ footer{background:var(--g1);color:rgba(255,255,255,.8);padding:44px 0 56px}
       </div>
       <div class="foot-col">
         <h4>服务项目</h4>
-        <a href="index.html#services">医院临床陪诊与看护</a>
-        <a href="index.html#services">住家老人护理</a>
-        <a href="index.html#services">各类场所保洁服务</a>
-        <a href="index.html#services">交通事故伤残理赔协助</a>
+        <a href="index.html#services" style="display:block">医院临床陪诊与看护</a>
+        <a href="index.html#services" style="display:block">住家老人护理</a>
+        <a href="index.html#services" style="display:block">各类场所保洁服务</a>
+        <a href="index.html#services" style="display:block">交通事故伤残理赔协助</a>
       </div>
       <div class="foot-col">
         <h4>联系我们</h4>
@@ -387,6 +387,15 @@ footer{background:var(--g1);color:rgba(255,255,255,.8);padding:44px 0 56px}
 </div>
 <script>
 function handleApply(e){e.preventDefault();var n=document.getElementById('an').value,t=document.getElementById('at').value,a=document.getElementById('aa').value,g=document.getElementById('ag').value,p=document.getElementById('ap').value,ex=document.getElementById('ae').value,av=document.getElementById('av').value,no=document.getElementById('ano').value;var b='【益康家政应聘申请】\n姓名：'+n+'\n电话：'+t+'\n年龄：'+a+'岁\n性别：'+g+'\n应聘岗位：'+p+'\n工作经验：'+ex+'\n可上岗时间：'+av+'\n补充说明：'+no;window.location.href='mailto:YikangCare@qq.com?subject=益康家政应聘-'+p+'&body='+encodeURIComponent(b);document.getElementById('atip').style.display='block';document.getElementById('ab').textContent='已提交 ✓';document.getElementById('ab').disabled=true};
+</script>
+<script>
+(function(){
+  var fl=document.getElementById('foot-logo');
+  var nl=document.getElementById('nav-logo');
+  var svgStr='<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="border-radius:10px"><rect width="40" height="40" rx="10" fill="#166534"/><path d="M10 10 16 22 16 32" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 10v22" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 21l7-7M24 21l7 9" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>';
+  if(fl) fl.onerror=function(){this.onerror=null;this.parentNode.innerHTML=svgStr+'<span style="font-size:16px;font-weight:700;color:#fff;">益康家政</span>'};
+  if(nl) nl.onerror=function(){this.onerror=null;this.parentNode.innerHTML=svgStr};
+})();
 </script>
 </body>
 </html>
