@@ -31,10 +31,36 @@ README.md    ← 本说明文件
 | 公司资质 | 营业执照信息、统一信用代码展示 |
 | 联系我们 | 电话+微信+地址+在线表单 |
 
+## 图片资源
+
+| 用途 | 文件 |
+|---|---|
+| 首屏团队实景 | `image/ykteam.jpg` |
+| 服务场景图库 | `image/Nursing1.jpg`、`image/Nursing2.jpg`、`image/Nursing3.jpg`、`image/workplace1.jpg`、`image/workplace3.jpg` |
+| 公司资质与品牌展示 | `image/ykhonor.jpg`、`image/ykbusiness-card.png`、`image/yklogo.png` |
+| 暂未上屏备用 | `image/office.png`、`image/other*.jpg`、`image/workplace2.jpg`、`image/workplace4.jpg`、`image/workplace5.jpg`、`image/workplace6.jpg` |
+
+## 已做优化
+
+- 增加 canonical、Open Graph URL、搜索关键词与本地商家结构化数据，便于搜索引擎理解公司信息、服务范围和联系方式。
+- 优化移动端体验：导航折叠、价格表横向滚动、底部固定快捷联系栏。
+- 表单提交改为生成邮件咨询内容，避免无后端情况下只显示“提交成功”。
+- 优化品牌视觉：收敛圆角、阴影和图标风格，强化正规家政服务的可信感。
+- 增加跳转主内容链接、焦点样式、表单 label 绑定等基础可访问性细节。
+- 增加团队、护理、医院场景、锦旗与品牌名片照片展示。
+
+## 本地预览
+
+```bash
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+打开 http://127.0.0.1:8000 预览。
+
 ## 待完善
 
 - [ ] 替换为真实场景照片
-- [ ] 接入 Formspree 表单通知到邮箱
+- [ ] 接入 Formspree、Cloudflare Forms 或其他后端表单通知到邮箱
 - [ ] 添加微信二维码图片
 - [ ] 后续可扩展多页面
 

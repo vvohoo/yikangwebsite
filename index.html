@@ -5,32 +5,79 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>昆山市益康家政服务有限公司 | 医院陪护·陪诊·家政服务</title>
   <meta name="description" content="昆山市益康家政服务有限公司，提供医院临床陪诊与看护、保洁及家政服务，面向昆山第四、第五人民医院及周边地区，24小时响应，可开具正规税务发票。">
+  <meta name="keywords" content="昆山家政,昆山护工,昆山陪护,医院陪诊,病人看护,昆山保洁,益康家政">
+  <meta name="robots" content="index,follow">
+  <meta name="format-detection" content="telephone=yes">
+  <link rel="canonical" href="https://yikangcare.com/">
   <meta property="og:title" content="昆山市益康家政服务有限公司">
   <meta property="og:description" content="昆山专业医院陪护·陪诊·保洁·家政服务，24小时，可开票。程经理 158 5030 1819">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yikangcare.com/">
+  <meta property="og:image" content="https://yikangcare.com/image/ykteam.jpg">
+  <meta property="og:locale" content="zh_CN">
   <meta name="theme-color" content="#1a7a2e">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="%231a7a2e"/><path d="M16 15l10 17v17" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 15v34M36 31l13-11M36 31l13 15" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "昆山市益康家政服务有限公司",
+    "url": "https://yikangcare.com/",
+    "telephone": ["+86-158-5030-1819", "+86-186-6225-4867", "+86-512-8781-1988"],
+    "email": "YikangCare@qq.com",
+    "foundingDate": "2017-10-25",
+    "priceRange": "180-200 CNY/day",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "昆山开发区前进东路1111号113室",
+      "addressLocality": "昆山市",
+      "addressRegion": "江苏省",
+      "addressCountry": "CN"
+    },
+    "areaServed": ["昆山市", "昆山第四人民医院", "昆山第五人民医院"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }],
+    "description": "昆山医院陪护、陪诊、病人看护、保洁与家政服务，24小时响应，可开具正规税务发票。",
+    "sameAs": ["https://github.com/vvohoo/yikangwebsite"]
+  }
+  </script>
   <style>
     :root{
       --green:#1a7a2e;--green-dark:#145c22;--green-mid:#2e9945;--green-soft:#e8f5eb;--green-acc:#c5e8cc;
-      --bg:#f7faf7;--surface:#ffffff;--surface-2:#f0f7f1;--border:#d6ebd9;
+      --amber:#b56b18;--amber-soft:#fff4dc;--ink:#213427;
+      --bg:#f6faf4;--surface:#ffffff;--surface-2:#eef7ef;--border:#d4e8d7;
       --text:#1a2b1c;--muted:#4d6b52;--faint:#8fa893;
-      --shadow:0 8px 28px rgba(26,122,46,.1);--shadow-sm:0 2px 10px rgba(26,122,46,.07);
-      --radius:20px;--radius-sm:14px;--max:1160px;
+      --shadow:0 14px 40px rgba(20,92,34,.11);--shadow-sm:0 4px 16px rgba(20,92,34,.08);
+      --radius:12px;--radius-sm:8px;--max:1160px;
       --font-serif:'Noto Serif SC',Georgia,serif;--font-body:'Noto Sans SC',system-ui,sans-serif;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;scroll-padding-top:70px}
-    body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.7}
+    body{
+      font-family:var(--font-body);background:
+        linear-gradient(120deg,rgba(255,255,255,.72),rgba(232,245,235,.48)),
+        radial-gradient(circle at 1px 1px,rgba(26,122,46,.09) 1px,transparent 0) 0 0/22px 22px,
+        var(--bg);
+      color:var(--text);line-height:1.7
+    }
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
-    .sr-only{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0)}
+    .skip-link{position:absolute;left:16px;top:-60px;z-index:200;background:var(--green-dark);color:#fff;
+      padding:10px 14px;border-radius:var(--radius-sm);font-size:14px;transition:top .18s}
+    .skip-link:focus{top:12px}
+    .sr-only{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden;white-space:nowrap}
     .wrap{width:min(calc(100% - 32px),var(--max));margin:auto}
+    :focus-visible{outline:3px solid rgba(181,107,24,.45);outline-offset:3px}
 
     /* NAV */
-    header{position:sticky;top:0;z-index:100;background:rgba(247,250,247,.92);backdrop-filter:blur(12px);
+    header{position:sticky;top:0;z-index:100;background:rgba(246,250,244,.92);backdrop-filter:blur(12px);
       border-bottom:1px solid rgba(26,122,46,.1)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:16px}
     .brand{display:flex;align-items:center;gap:11px}
@@ -41,35 +88,45 @@
     .nav-links{display:flex;gap:20px;font-size:14px;color:var(--muted)}
     .nav-links a:hover{color:var(--green)}
     .nav-cta{display:flex;gap:8px;align-items:center}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:999px;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;border:0;transition:all .18s}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 18px;border-radius:999px;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;border:0;transition:transform .18s,background .18s,box-shadow .18s,color .18s}
     .btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow-sm)}
-    .btn-primary:hover{background:var(--green-dark)}
+    .btn-primary:hover{background:var(--green-dark);transform:translateY(-1px)}
     .btn-outline{border:1.5px solid var(--green);color:var(--green);background:transparent}
-    .btn-outline:hover{background:var(--green-soft)}
+    .btn-outline:hover{background:var(--green-soft);transform:translateY(-1px)}
     .btn-lg{padding:14px 22px;font-size:15px}
 
     /* HERO */
-    .hero{padding:52px 0 28px}
+    .hero{padding:56px 0 34px}
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
     .eyebrow{display:inline-flex;gap:6px;align-items:center;background:var(--green-soft);color:var(--green-dark);
       padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:16px}
-    h1{font-family:var(--font-serif);font-size:clamp(30px,4.5vw,54px);line-height:1.12;margin-bottom:14px;color:var(--green-dark)}
+    h1{font-family:var(--font-serif);font-size:clamp(31px,4.5vw,54px);line-height:1.12;margin-bottom:14px;color:var(--green-dark)}
     .hero-desc{font-size:16px;color:var(--muted);max-width:56ch;margin-bottom:20px}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
     .badge-row{display:flex;gap:10px;flex-wrap:wrap}
-    .badge{background:var(--surface);border:1px solid var(--border);border-radius:999px;
-      padding:6px 14px;font-size:13px;color:var(--muted)}
+    .badge{background:rgba(255,255,255,.86);border:1px solid var(--border);border-radius:999px;
+      padding:6px 14px;font-size:13px;color:var(--muted);box-shadow:0 1px 0 rgba(255,255,255,.8) inset}
     /* hero card */
-    .hero-card{background:linear-gradient(160deg,#fff 60%,#e8f5eb);border-radius:26px;
-      padding:20px;border:1px solid var(--border);box-shadow:var(--shadow)}
+    .hero-card{position:relative;background:linear-gradient(160deg,#fff 58%,#e8f5eb);border-radius:18px;
+      padding:20px;border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+    .hero-card:before{content:"";position:absolute;inset:0;background:
+      linear-gradient(135deg,rgba(181,107,24,.08),transparent 34%),
+      repeating-linear-gradient(135deg,rgba(26,122,46,.045) 0 1px,transparent 1px 13px);
+      pointer-events:none}
+    .hero-card>*{position:relative}
+    .hero-photo{position:relative;border-radius:14px;overflow:hidden;margin-bottom:14px;border:1px solid rgba(20,92,34,.12)}
+    .hero-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 42%}
+    .photo-caption{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;gap:8px;
+      color:#fff;font-size:12px;font-weight:700;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+    .photo-caption span{background:rgba(20,92,34,.82);backdrop-filter:blur(6px);border-radius:999px;padding:5px 10px}
     .hero-contacts{display:grid;gap:10px;margin-bottom:14px}
     .contact-row{display:flex;align-items:center;gap:12px;background:var(--surface-2);
       border-radius:var(--radius-sm);padding:13px 16px;border:1px solid var(--border)}
     .contact-row .icon{width:36px;height:36px;border-radius:50%;background:var(--green-soft);
-      display:grid;place-items:center;flex-shrink:0;font-size:16px}
+      display:grid;place-items:center;flex-shrink:0;font-size:13px;font-weight:800;color:var(--green-dark)}
     .contact-row strong{display:block;font-size:14px;color:var(--text)}
     .contact-row span{font-size:12px;color:var(--muted)}
-    .invoice-badge{display:flex;align-items:center;gap:8px;background:#fffbeb;
+    .invoice-badge{display:flex;align-items:center;gap:8px;background:var(--amber-soft);
       border:1px solid #fcd34d;border-radius:var(--radius-sm);padding:10px 14px;margin-top:4px}
 
     /* SECTION */
@@ -86,13 +143,22 @@
       border:1px solid var(--border);box-shadow:var(--shadow-sm);transition:box-shadow .18s}
     .svc-card:hover{box-shadow:var(--shadow)}
     .svc-icon{width:44px;height:44px;border-radius:14px;background:var(--green-soft);
-      display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+      display:grid;place-items:center;font-size:13px;font-weight:800;color:var(--green-dark);margin-bottom:14px}
     .svc-card h3{font-size:18px;margin-bottom:8px;color:var(--green-dark)}
     .svc-card p{font-size:14px;color:var(--muted);line-height:1.65}
+    .scene-gallery{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px;margin-top:18px}
+    .scene-card{position:relative;min-height:190px;border-radius:var(--radius);overflow:hidden;background:#dfe8df;
+      border:1px solid var(--border);box-shadow:var(--shadow-sm)}
+    .scene-card:first-child{grid-row:span 2;min-height:396px}
+    .scene-card img{width:100%;height:100%;object-fit:cover}
+    .scene-card figcaption{position:absolute;left:12px;right:12px;bottom:12px;color:#fff;font-size:13px;font-weight:700;
+      background:linear-gradient(90deg,rgba(20,92,34,.88),rgba(20,92,34,.54));border-radius:999px;padding:7px 11px;
+      text-shadow:0 1px 6px rgba(0,0,0,.4)}
 
     /* PRICING */
+    .table-scroll{overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface)}
     .pricing-table{width:100%;border-collapse:collapse;background:var(--surface);
-      border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+      border-radius:var(--radius);overflow:hidden;min-width:760px}
     .pricing-table th{background:var(--green);color:#fff;padding:14px 18px;text-align:left;font-size:14px}
     .pricing-table td{padding:13px 18px;font-size:14px;border-top:1px solid var(--border);vertical-align:top}
     .pricing-table tr:hover td{background:var(--green-soft)}
@@ -112,7 +178,7 @@
       border:1px solid var(--border);box-shadow:var(--shadow-sm)}
     .recruit-card h3{font-size:18px;margin-bottom:12px;color:var(--green-dark)}
     .recruit-card ul{padding-left:18px;color:var(--muted);font-size:14px;display:grid;gap:8px}
-    .earn-highlight{background:linear-gradient(135deg,var(--green-soft),#e0f5e4);
+    .earn-highlight{background:linear-gradient(135deg,var(--green-soft),#fff9eb);
       border:1px solid var(--green-acc);border-radius:var(--radius);padding:20px 24px;margin-top:16px}
     .earn-highlight h3{color:var(--green-dark);margin-bottom:10px}
     .earn-row{display:flex;gap:14px;flex-wrap:wrap}
@@ -127,6 +193,13 @@
       border:1px solid var(--border);box-shadow:var(--shadow-sm);text-align:center}
     .cert-card img{width:100%;border-radius:12px;margin-bottom:10px;aspect-ratio:4/3;object-fit:cover}
     .cert-card p{font-size:12px;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+    .about-media{display:grid;grid-template-columns:1.35fr .8fr;gap:14px;margin-top:16px}
+    .about-photo{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px;box-shadow:var(--shadow-sm)}
+    .about-photo img{width:100%;height:100%;max-height:420px;object-fit:cover;border-radius:8px}
+    .about-photo p{font-size:12px;color:var(--muted);padding:8px 2px 0}
+    .about-photo.stack{display:grid;gap:10px}
+    .about-photo.stack img{height:auto;max-height:none;object-fit:contain;background:#f4f7f4}
 
     /* CONTACT */
     .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -149,6 +222,9 @@
     .form-group input:focus,.form-group textarea:focus,.form-group select:focus{
       outline:0;border-color:var(--green)}
     .form-group textarea{min-height:110px;resize:vertical}
+    .form-note{font-size:12px;color:var(--muted);line-height:1.6;text-align:center}
+    .form-tip{display:none;color:var(--green);font-size:13px;text-align:center}
+    .form-tip.is-visible{display:block}
 
     /* FOOTER */
     footer{background:var(--green-dark);color:#c5e8cc;padding:28px 0 44px}
@@ -158,24 +234,42 @@
     .foot-col a:hover{color:#fff}
     .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:16px;margin-top:20px;
       display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12px;color:#7ab882}
+    .mobile-callbar{display:none}
 
     /* RESPONSIVE */
     @media(max-width:1000px){
       .hero-grid,.contact-wrap,.cert-grid{grid-template-columns:1fr 1fr}
+      .nav-cta .btn-outline{display:none}
     }
     @media(max-width:720px){
-      .hero-grid,.services-grid,.steps,.recruit-grid,.contact-wrap,.cert-grid,.foot-grid{grid-template-columns:1fr}
+      .hero-grid,.services-grid,.steps,.recruit-grid,.contact-wrap,.cert-grid,.about-grid,.about-media,.foot-grid{grid-template-columns:1fr}
+      .scene-gallery{grid-template-columns:1fr 1fr}
+      .scene-card:first-child{grid-column:1 / -1;grid-row:auto;min-height:260px}
       .form-row{grid-template-columns:1fr}
       .nav-links{display:none}
+      .nav-cta .btn-primary{padding:10px 14px}
+      .hero{padding-top:34px}
+      .pricing-table th,.pricing-table td{white-space:nowrap}
+      footer{padding-bottom:86px}
+      .mobile-callbar{position:fixed;left:0;right:0;bottom:0;z-index:120;display:grid;grid-template-columns:1fr 1fr;
+        gap:8px;padding:10px 12px;background:rgba(246,250,244,.94);backdrop-filter:blur(12px);
+        border-top:1px solid rgba(26,122,46,.16)}
+      .mobile-callbar .btn{width:100%;padding:12px 10px;font-size:13px}
     }
     @media(max-width:480px){
       h1{font-size:28px}
+      .brand-text span{display:none}
+      .wrap{width:min(calc(100% - 24px),var(--max))}
+      .hero-card{padding:14px}
+      .scene-gallery{grid-template-columns:1fr}
+      .scene-card,.scene-card:first-child{min-height:220px}
+      .contact-row{padding:11px 12px}
     }
   </style>
 </head>
 <body>
 
-<a href="#main" style="position:absolute;left:-9999px;top:0;" class="sr-only">跳到主要内容</a>
+<a href="#main" class="skip-link">跳到主要内容</a>
 
 <!-- ===== HEADER ===== -->
 <header>
@@ -203,7 +297,7 @@
       <a href="#contact">联系我们</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-outline" href="tel:15850301819">📞 158 5030 1819</a>
+      <a class="btn btn-outline" href="tel:15850301819">电话 158 5030 1819</a>
       <a class="btn btn-primary" href="#contact">立即咨询</a>
     </div>
   </div>
@@ -217,7 +311,7 @@
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow">
-        <span>📍</span> 昆山第四、第五人民医院 · 养老院及周边
+        <span>服务区域</span> 昆山第四、第五人民医院 · 养老院及周边
       </div>
       <h1>专业陪护，让家人放心，让患者安心。</h1>
       <p class="hero-desc">
@@ -228,45 +322,52 @@
         <a class="btn btn-outline btn-lg" href="#contact">在线需求提交</a>
       </div>
       <div class="badge-row">
-        <span class="badge">✅ 24小时服务</span>
-        <span class="badge">🧾 可开正规发票</span>
-        <span class="badge">🏥 昆山医院覆盖</span>
-        <span class="badge">📅 成立2017年</span>
+        <span class="badge">24小时服务</span>
+        <span class="badge">可开正规发票</span>
+        <span class="badge">昆山医院覆盖</span>
+        <span class="badge">成立2017年</span>
       </div>
     </div>
     <div>
       <div class="hero-card">
+        <figure class="hero-photo">
+          <img src="image/ykteam.jpg" alt="昆山市益康家政护工团队实景合影" width="1440" height="1080" fetchpriority="high">
+          <figcaption class="photo-caption">
+            <span>益康护工团队</span>
+            <span>医院陪护实景服务</span>
+          </figcaption>
+        </figure>
         <div class="hero-contacts">
           <div class="contact-row">
-            <div class="icon">👨‍💼</div>
+            <div class="icon" aria-hidden="true">程</div>
             <div>
               <strong>程经理（负责人）</strong>
               <span><a href="tel:15850301819" style="color:var(--green);font-weight:700">158 5030 1819</a></span>
             </div>
           </div>
           <div class="contact-row">
-            <div class="icon">👩</div>
+            <div class="icon" aria-hidden="true">顾</div>
             <div>
               <strong>顾女士（客服）</strong>
               <span><a href="tel:18662254867" style="color:var(--green);font-weight:700">186 6225 4867</a></span>
             </div>
           </div>
           <div class="contact-row">
-            <div class="icon">📞</div>
+            <div class="icon" aria-hidden="true">机</div>
             <div>
               <strong>座机</strong>
               <span><a href="tel:051287811988" style="color:var(--green)">0512-87811988</a> / <a href="tel:18626247657" style="color:var(--green)">186 2624 7657</a></span>
             </div>
           </div>
           <div class="contact-row">
-            <div class="icon">💬</div>
+            <div class="icon" aria-hidden="true">微</div>
             <div>
               <strong>微信号</strong>
               <span style="color:var(--green);font-weight:600">yikangcare</span>
             </div>
           </div>
           <div class="contact-row">
-            <div class="icon">📧</div>
+            <div class="icon" aria-hidden="true">邮</div>
             <div>
               <strong>邮箱 / 支付宝</strong>
               <span>YikangCare@qq.com</span>
@@ -274,9 +375,9 @@
           </div>
         </div>
         <div class="invoice-badge">
-          <span style="font-size:18px">🧾</span>
+          <span style="font-size:13px;font-weight:800;color:var(--amber)" aria-hidden="true">票</span>
           <div>
-            <strong style="font-size:14px;color:#92400e">★ 可提供正规税务发票</strong>
+            <strong style="font-size:14px;color:#92400e">可提供正规税务发票</strong>
             <div style="font-size:12px;color:#b45309">适合医院、养老院、企业等单位客户报销需求</div>
           </div>
         </div>
@@ -295,20 +396,42 @@
     </div>
     <div class="services-grid">
       <article class="svc-card">
-        <div class="svc-icon">🏥</div>
+        <div class="svc-icon" aria-hidden="true">护</div>
         <h3>医院临床陪诊与看护</h3>
         <p>专业护工在医院内提供全程陪护服务，协助患者日常生活起居、如厕、翻身、饮食照料，直至康复出院。主要服务于昆山第四、第五人民医院及周边医疗机构。</p>
       </article>
       <article class="svc-card">
-        <div class="svc-icon">🧹</div>
+        <div class="svc-icon" aria-hidden="true">洁</div>
         <h3>各类场所保洁服务</h3>
         <p>承接大小型场所专业保洁，包括医院病区、养老院、企业办公室、住宅小区及工厂区域的日常清洁与专项保洁工作，定期服务可签合同。</p>
       </article>
       <article class="svc-card">
-        <div class="svc-icon">⚖️</div>
+        <div class="svc-icon" aria-hidden="true">理</div>
         <h3>交通事故伤残鉴定与理赔</h3>
         <p>协助当事人完成交通事故伤残等级鉴定、理赔流程对接与材料整理，提供全程陪同协助，减轻家属处理负担。</p>
       </article>
+    </div>
+    <div class="scene-gallery" aria-label="益康家政服务实景照片">
+      <figure class="scene-card">
+        <img src="image/Nursing1.jpg" alt="益康护工在医院病房陪护患者" width="1280" height="720" loading="lazy">
+        <figcaption>医院病房陪护实景</figcaption>
+      </figure>
+      <figure class="scene-card">
+        <img src="image/workplace1.jpg" alt="昆山医院护士站与病区环境" width="1915" height="1080" loading="lazy">
+        <figcaption>医院病区服务场景</figcaption>
+      </figure>
+      <figure class="scene-card">
+        <img src="image/Nursing2.jpg" alt="益康护工在病房内提供看护服务" width="1280" height="720" loading="lazy">
+        <figcaption>护工现场照护</figcaption>
+      </figure>
+      <figure class="scene-card">
+        <img src="image/workplace3.jpg" alt="医院住院病区走廊环境" width="1914" height="1080" loading="lazy">
+        <figcaption>覆盖院区环境</figcaption>
+      </figure>
+      <figure class="scene-card">
+        <img src="image/Nursing3.jpg" alt="益康护工团队在病房服务现场" width="1280" height="720" loading="lazy">
+        <figcaption>陪护服务到岗</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -321,45 +444,47 @@
       <h2 class="section-title">透明计价，同类型多人照顾叠加计算</h2>
       <p class="section-desc">护工服务以"天"为单位计算（24小时为一天），照顾人数越多，综合日收益越高。</p>
     </div>
-    <table class="pricing-table">
-      <thead>
-        <tr>
-          <th>照顾人数</th>
-          <th>每位患者日费</th>
-          <th>护工每日总收入</th>
-          <th>干满30天</th>
-          <th>说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1人</td>
-          <td>180 – 200 元/天</td>
-          <td>180 – 200 元</td>
-          <td>≥ 4,800 元</td>
-          <td>24小时看护，吃喝在院，工作至出院结算</td>
-        </tr>
-        <tr>
-          <td>2人</td>
-          <td>180 – 200 元/天 × 2</td>
-          <td>约 360 元</td>
-          <td>约 9,600 元</td>
-          <td>同时照顾，收入叠加计算</td>
-        </tr>
-        <tr>
-          <td>3人及以上</td>
-          <td>依人数等比叠加</td>
-          <td>依人数递增</td>
-          <td>多劳多得</td>
-          <td>护工经验强者可同时接多人，收入更高</td>
-        </tr>
-        <tr>
-          <td colspan="5" style="background:var(--green-soft);color:var(--green-dark);font-size:13px">
-            💡 保洁服务按场地面积与周期另行报价；交通事故协助服务按实际情况沟通。如需正规税务发票，可提前说明。
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-scroll" aria-label="护工服务收费标准表">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>照顾人数</th>
+            <th>每位患者日费</th>
+            <th>护工每日总收入</th>
+            <th>干满30天</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1人</td>
+            <td>180 - 200 元/天</td>
+            <td>180 - 200 元</td>
+            <td>不少于 4,800 元</td>
+            <td>24小时看护，吃喝在院，工作至出院结算</td>
+          </tr>
+          <tr>
+            <td>2人</td>
+            <td>180 - 200 元/天 x 2</td>
+            <td>约 360 元</td>
+            <td>约 9,600 元</td>
+            <td>同时照顾，收入叠加计算</td>
+          </tr>
+          <tr>
+            <td>3人及以上</td>
+            <td>依人数等比叠加</td>
+            <td>依人数递增</td>
+            <td>多劳多得</td>
+            <td>护工经验强者可同时接多人，收入更高</td>
+          </tr>
+          <tr>
+            <td colspan="5" style="background:var(--green-soft);color:var(--green-dark);font-size:13px">
+              保洁服务按场地面积与周期另行报价；交通事故协助服务按实际情况沟通。如需正规税务发票，可提前说明。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -419,7 +544,7 @@
       </div>
     </div>
     <div class="earn-highlight">
-      <h3>📊 护工收入参考（以陪护住院患者为例）</h3>
+      <h3>护工收入参考（以陪护住院患者为例）</h3>
       <div class="earn-row">
         <div class="earn-item">
           <strong>≥ 4,800 元</strong>
@@ -441,7 +566,7 @@
     </div>
     <div style="margin-top:16px;text-align:center">
       <p style="margin-bottom:12px;color:var(--muted)">欢迎有时间、有能力的你前来挑战高薪。符合要求请直接联系：</p>
-      <a class="btn btn-primary btn-lg" href="tel:15850301819" style="display:inline-flex">📞 程经理：158 5030 1819</a>
+      <a class="btn btn-primary btn-lg" href="tel:15850301819" style="display:inline-flex">程经理：158 5030 1819</a>
     </div>
   </div>
 </section>
@@ -454,7 +579,7 @@
       <h2 class="section-title">正规注册企业，工商可查</h2>
       <p class="section-desc">昆山市益康家政服务有限公司成立于2017年，法定代表人：程焕兵，统一社会信用代码：91320583MA1T60CC2J，注册资本100万元整。</p>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+    <div class="about-grid">
       <div style="background:var(--surface);border-radius:var(--radius);padding:18px;border:1px solid var(--border)">
         <h3 style="color:var(--green-dark);margin-bottom:10px;font-size:16px">基本信息</h3>
         <div style="display:grid;gap:8px;font-size:14px;color:var(--muted)">
@@ -480,7 +605,18 @@
       </div>
     </div>
     <div style="background:var(--green-soft);border:1px solid var(--green-acc);border-radius:var(--radius);padding:14px 18px;font-size:13px;color:var(--green-dark)">
-      🔍 可登录 <strong>国家企业信息公示系统</strong>（http://www.gsxt.gov.cn）查询公司备案与资质信息。统一信用代码：<strong>91320583MA1T60CC2J</strong>
+      可登录 <strong>国家企业信息公示系统</strong>（http://www.gsxt.gov.cn）查询公司备案与资质信息。统一信用代码：<strong>91320583MA1T60CC2J</strong>
+    </div>
+    <div class="about-media" aria-label="益康家政品牌与荣誉照片">
+      <figure class="about-photo">
+        <img src="image/ykhonor.jpg" alt="患者家属向昆山市益康家政赠送锦旗表示感谢" width="1080" height="1439" loading="lazy">
+        <p>患者家属赠送锦旗，感谢益康家政陪护服务。</p>
+      </figure>
+      <div class="about-photo stack">
+        <img src="image/ykbusiness-card.png" alt="昆山市益康家政服务有限公司联系名片" width="893" height="1089" loading="lazy">
+        <img src="image/yklogo.png" alt="益康家政品牌标识" width="3586" height="4281" loading="lazy">
+        <p>品牌名片与企业标识，便于客户核对联系方式。</p>
+      </div>
     </div>
   </div>
 </section>
@@ -509,12 +645,12 @@
         <h3>在线需求提交</h3>
         <form class="form-grid" onsubmit="handleForm(event)">
           <div class="form-row">
-            <div class="form-group"><label>您的称呼</label><input type="text" placeholder="请输入称呼" required></div>
-            <div class="form-group"><label>联系电话</label><input type="tel" placeholder="请输入手机号" required></div>
+            <div class="form-group"><label for="name">您的称呼</label><input id="name" name="name" type="text" placeholder="请输入称呼" autocomplete="name" required></div>
+            <div class="form-group"><label for="phone">联系电话</label><input id="phone" name="phone" type="tel" placeholder="请输入手机号" autocomplete="tel" required></div>
           </div>
           <div class="form-group">
-            <label>服务类型</label>
-            <select>
+            <label for="service">服务类型</label>
+            <select id="service" name="service">
               <option>医院临床陪诊与看护</option>
               <option>场所保洁服务</option>
               <option>交通事故伤残鉴定与理赔协助</option>
@@ -522,10 +658,11 @@
               <option>其他咨询</option>
             </select>
           </div>
-          <div class="form-group"><label>需求说明</label><textarea placeholder="例如：昆山第四人民医院，需要白班护工1名，患者情况简述..."></textarea></div>
+          <div class="form-group"><label for="message">需求说明</label><textarea id="message" name="message" placeholder="例如：昆山第四人民医院，需要白班护工1名，患者情况简述..."></textarea></div>
           <button class="btn btn-primary" type="submit" style="width:100%;padding:14px">提交需求</button>
-          <p id="form-tip" style="display:none;color:var(--green);font-size:13px;text-align:center">
-            ✅ 提交成功！我们将尽快与您联系，也可直接致电 158 5030 1819。
+          <p class="form-note">提交后会打开邮件应用生成咨询内容；紧急需求请直接拨打程经理电话。</p>
+          <p id="form-tip" class="form-tip" role="status">
+            已为您生成邮件内容。也可直接致电 158 5030 1819。
           </p>
         </form>
       </div>
@@ -566,11 +703,28 @@
   </div>
 </footer>
 
+<div class="mobile-callbar" aria-label="移动端快捷联系">
+  <a class="btn btn-primary" href="tel:15850301819">拨打程经理</a>
+  <a class="btn btn-outline" href="#contact">提交需求</a>
+</div>
+
 <script>
 function handleForm(e){
   e.preventDefault();
-  document.getElementById('form-tip').style.display='block';
-  e.target.querySelector('button[type=submit]').textContent='已提交';
+  var form = e.target;
+  var data = new FormData(form);
+  var subject = '益康家政官网咨询 - ' + (data.get('service') || '服务咨询');
+  var body = [
+    '您的称呼：' + (data.get('name') || ''),
+    '联系电话：' + (data.get('phone') || ''),
+    '服务类型：' + (data.get('service') || ''),
+    '需求说明：',
+    data.get('message') || ''
+  ].join('\n');
+  var mailto = 'mailto:YikangCare@qq.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  document.getElementById('form-tip').classList.add('is-visible');
+  form.querySelector('button[type=submit]').textContent='已生成邮件';
+  window.location.href = mailto;
 }
 </script>
 </body>
