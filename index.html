@@ -3,219 +3,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>昆山市益康家政服务有限公司 | 医院陪护·住家护理·保洁服务</title>
-  <meta name="description" content="昆山市益康家政服务有限公司，专业医院陪护、住家老人护理、保洁及家政服务，覆盖昆山第四、第五人民医院及周边，24小时响应，可开正规税务发票。">
+  <title>昆山益康家政 | 选益康，更健康 | 医院陪护·住家护理·保洁</title>
+  <meta name="description" content="昆山市益康家政服务有限公司，专业医院陪护、住家老人护理、保洁服务。17名持证护工，可开正规发票，24小时响应。选益康，更健康！程经理：15850301819">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-
 :root{
-  --g1:#166534;--g2:#15803d;--g3:#16a34a;--g-soft:#f0fdf4;--g-acc:#bbf7d0;--g-mid:#dcfce7;
-  --bg:#f9fafb;--surf:#fff;--surf2:#f0fdf4;--border:#d1fae5;--border2:#e5e7eb;
+  --g1:#166534;--g2:#15803d;--gsoft:#f0fdf4;--gacc:#bbf7d0;--gmid:#dcfce7;
+  --bg:#f9fafb;--surf:#ffffff;--b2:#e5e7eb;--bdr:#d1fae5;
   --text:#111827;--muted:#4b5563;--faint:#9ca3af;
-  --sh:0 4px 24px rgba(22,101,52,.1);--sh-sm:0 2px 8px rgba(22,101,52,.07);
-  --r:20px;--r-sm:14px;--r-xs:10px;--max:1160px;
-  --serif:'Noto Serif SC',Georgia,serif;--sans:'Noto Sans SC',system-ui,sans-serif;
+  --sh:0 4px 24px rgba(22,101,52,.1);--shsm:0 2px 8px rgba(22,101,52,.07);
+  --r:20px;--rsm:14px;--rxs:10px;--max:1160px;
+  --serif:'Noto Serif SC',Georgia,serif;
+  --sans:'Noto Sans SC',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:68px}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
-a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{font:inherit;border:0;cursor:pointer}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{font:inherit;border:0;cursor:pointer}
 .sr-only{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .wrap{width:min(calc(100% - 2rem),var(--max));margin:0 auto}
-header{position:sticky;top:0;z-index:200;background:rgba(249,250,251,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(22,101,52,.1)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px;flex-wrap:wrap}
+
+/* NAV */
+header{position:sticky;top:0;z-index:200;background:rgba(249,250,251,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(22,101,52,.1)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:12px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px}
-.brand-logo{width:40px;height:40px;border-radius:12px;background:var(--g1);display:grid;place-items:center;flex-shrink:0}
-.brand-logo svg{width:26px;height:26px}
+.brand-logo{width:40px;height:40px;border-radius:10px;overflow:hidden;flex-shrink:0;background:var(--gsoft);display:grid;place-items:center}
+.brand-logo img{width:100%;height:100%;object-fit:contain}
 .brand-name{font-size:15px;font-weight:700;color:var(--g1);line-height:1.2}
-.brand-sub{font-size:11px;color:var(--muted)}
+.brand-slogan{font-size:11px;color:var(--g2);font-weight:600}
 .nav-links{display:flex;gap:18px;font-size:14px;color:var(--muted)}
-.nav-links a:hover{color:var(--g1)}
-.nav-links a.active{color:var(--g1);font-weight:700}
+.nav-links a:hover,.nav-links a.active{color:var(--g1);font-weight:600}
 .nav-btns{display:flex;gap:8px;align-items:center}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;transition:all .15s ease}
-.btn-primary{background:var(--g1);color:#fff}.btn-primary:hover{background:var(--g2);transform:translateY(-1px)}
-.btn-ghost{border:1.5px solid var(--g1);color:var(--g1);background:transparent}.btn-ghost:hover{background:var(--g-soft)}
-.btn-orange{background:#ea580c;color:#fff}.btn-orange:hover{background:#c2410c;transform:translateY(-1px)}
-.btn-lg{padding:14px 22px;font-size:15px}.btn-xl{padding:16px 26px;font-size:16px;border-radius:16px}
-section{padding:40px 0}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 18px;border-radius:999px;font-size:14px;font-weight:600;transition:all .15s}
+.btn-p{background:var(--g1);color:#fff}.btn-p:hover{background:var(--g2);transform:translateY(-1px)}
+.btn-g{border:1.5px solid var(--g1);color:var(--g1)}.btn-g:hover{background:var(--gsoft)}
+.btn-o{background:#ea580c;color:#fff}.btn-o:hover{background:#c2410c;transform:translateY(-1px)}
+.btn-xl{padding:14px 24px;font-size:15px;border-radius:16px}
+
+/* LAYOUT */
+section{padding:44px 0}
 .sec-label{font-size:12px;font-weight:700;color:var(--g2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
-.sec-title{font-family:var(--serif);font-size:clamp(22px,3vw,30px);color:var(--g1);margin-bottom:6px}
-.sec-sub{font-size:15px;color:var(--muted);max-width:60ch;margin-bottom:22px}
-footer{background:var(--g1);color:rgba(255,255,255,.8);padding:40px 0 60px}
+.sec-title{font-family:var(--serif);font-size:clamp(22px,3vw,32px);color:var(--g1);margin-bottom:6px}
+.sec-sub{font-size:15px;color:var(--muted);max-width:60ch;margin-bottom:24px}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse}
+th{background:rgba(22,101,52,.08);padding:12px 16px;text-align:left;font-size:14px;color:var(--g1)}
+td{padding:13px 16px;font-size:14px;border-top:1px solid var(--b2);color:var(--muted)}
+tr:hover td{background:var(--gsoft)}
+.td-em{color:var(--g1);font-weight:700}
+
+/* FORMS */
+.form-grid{display:grid;gap:12px}
+.form-row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fg label{display:block;font-size:13px;color:var(--muted);margin-bottom:5px}
+.fg input,.fg textarea,.fg select{width:100%;padding:12px 14px;border:1.5px solid var(--b2);border-radius:12px;background:#fff;font:inherit;font-size:14px;color:var(--text);transition:border .15s}
+.fg input:focus,.fg textarea:focus,.fg select:focus{outline:0;border-color:var(--g2);box-shadow:0 0 0 3px rgba(22,163,74,.1)}
+.fg textarea{min-height:88px;resize:vertical}
+
+/* FOOTER */
+footer{background:var(--g1);color:rgba(255,255,255,.8);padding:44px 0 56px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand img{width:36px;height:36px;border-radius:9px;background:#fff;padding:2px;object-fit:contain}
+.foot-brand span{font-size:16px;font-weight:700;color:#fff}
+.foot-slogan{font-size:13px;color:rgba(255,255,255,.7);font-style:italic;margin-bottom:10px}
 .foot-col h4{color:#fff;font-size:15px;margin-bottom:12px;font-weight:700}
 .foot-col p,.foot-col a{font-size:14px;line-height:2.1;color:rgba(255,255,255,.7)}
 .foot-col a:hover{color:#fff}
 .foot-bottom{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:20px;font-size:13px;color:rgba(255,255,255,.5)}
-.call-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;padding:10px 16px;background:#fff;border-top:1px solid var(--border2);box-shadow:0 -4px 20px rgba(0,0,0,.1);gap:8px}
+
+/* MOBILE BAR */
+.call-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;padding:10px 16px;background:#fff;border-top:1px solid var(--b2);box-shadow:0 -4px 20px rgba(0,0,0,.1);gap:8px}
 .call-bar a{flex:1;text-align:center;padding:12px;border-radius:12px;font-weight:700;font-size:14px}
-.call-bar .call{background:var(--g1);color:#fff}.call-bar .wx{background:var(--g-soft);color:var(--g1);border:1.5px solid var(--g-acc)}
+.call-bar .call{background:var(--g1);color:#fff}
+.call-bar .wx{background:var(--gsoft);color:var(--g1);border:1.5px solid var(--gacc)}
+
 @media(max-width:960px){.foot-grid{grid-template-columns:1fr 1fr}.nav-links{display:none}}
 @media(max-width:600px){.foot-grid{grid-template-columns:1fr}.call-bar{display:flex}footer{padding-bottom:80px}}
 
-/* ── INDEX-SPECIFIC ── */
-.hero{padding:50px 0 28px;background:linear-gradient(170deg,var(--g-soft) 0%,var(--bg) 100%)}
+/* HERO */
+.hero{padding:50px 0 30px;background:linear-gradient(170deg,var(--gsoft) 0%,var(--bg) 100%)}
 .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:start}
-.hero-tag{display:inline-flex;align-items:center;gap:6px;background:var(--g-acc);color:var(--g1);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:14px}
-h1{font-family:var(--serif);font-size:clamp(26px,4vw,50px);line-height:1.15;color:var(--g1);margin-bottom:12px}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;background:var(--gacc);color:var(--g1);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:14px}
+h1{font-family:var(--serif);font-size:clamp(26px,4vw,50px);line-height:1.15;color:var(--g1);margin-bottom:8px}
+.hero-slogan{font-family:var(--serif);font-size:clamp(15px,2vw,22px);color:var(--g2);font-weight:700;margin-bottom:14px;border-left:4px solid var(--g2);padding-left:14px;letter-spacing:.04em}
 .hero-sub{font-size:16px;color:var(--muted);max-width:52ch;margin-bottom:18px;line-height:1.8}
 .hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
-.trust-chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{background:var(--surf);border:1px solid var(--border2);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--muted)}
-.hero-card{background:var(--surf);border-radius:24px;border:1px solid var(--border);box-shadow:var(--sh);overflow:hidden}
-.hero-img-wrap{position:relative;aspect-ratio:16/9;overflow:hidden}
-.hero-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.hero-img-wrap:hover img{transform:scale(1.04)}
-.hero-img-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.55));padding:14px 16px}
-.hero-img-overlay span{color:#fff;font-size:13px;font-weight:500}
-.contacts-list{padding:14px}
-.c-item{display:flex;align-items:center;gap:12px;padding:9px 12px;border-radius:var(--r-xs);transition:background .15s}
-.c-item:hover{background:var(--g-soft)}
-.c-dot{width:34px;height:34px;border-radius:50%;background:var(--g-soft);display:grid;place-items:center;flex-shrink:0;font-size:15px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:var(--surf);border:1px solid var(--b2);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--muted)}
+.hero-card{background:var(--surf);border-radius:24px;border:1px solid var(--bdr);box-shadow:var(--sh);overflow:hidden}
+.hero-imgwrap{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--gmid)}
+.hero-imgwrap img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.hero-imgwrap:hover img{transform:scale(1.04)}
+.hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.55));padding:12px 16px}
+.hero-overlay span{color:#fff;font-size:13px}
+.contacts{padding:12px}
+.c-item{display:flex;align-items:center;gap:12px;padding:9px 12px;border-radius:var(--rxs);transition:background .15s}
+.c-item:hover{background:var(--gsoft)}
+.c-dot{width:34px;height:34px;border-radius:50%;background:var(--gsoft);display:grid;place-items:center;flex-shrink:0;font-size:15px}
 .c-item strong{display:block;font-size:13px;color:var(--text)}
 .c-item a{font-size:14px;font-weight:700;color:var(--g1)}
-.invoice-strip{margin:0 14px 14px;background:#fefce8;border:1px solid #fde68a;border-radius:var(--r-xs);padding:10px 14px;display:flex;align-items:center;gap:10px;font-size:13px}
-.invoice-strip strong{color:#92400e}.invoice-strip span{color:#b45309}
+.inv-strip{margin:0 12px 12px;background:#fefce8;border:1px solid #fde68a;border-radius:var(--rxs);padding:10px 14px;display:flex;align-items:center;gap:10px;font-size:13px}
+.inv-strip strong{color:#92400e}.inv-strip span{color:#b45309}
 /* SERVICES */
 .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.svc-card{background:var(--surf);border-radius:var(--r);border:1px solid var(--border2);box-shadow:var(--sh-sm);overflow:hidden;transition:transform .18s,box-shadow .18s}
+.svc-card{background:var(--surf);border-radius:var(--r);border:1px solid var(--b2);box-shadow:var(--shsm);overflow:hidden;transition:transform .18s,box-shadow .18s}
 .svc-card:hover{transform:translateY(-3px);box-shadow:var(--sh)}
-.svc-card.wide{grid-column:span 2}
-.svc-img{aspect-ratio:16/9;overflow:hidden;background:var(--g-mid)}
+.svc-img{aspect-ratio:16/9;overflow:hidden;background:var(--gmid)}
 .svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .svc-card:hover .svc-img img{transform:scale(1.05)}
-.svc-body{padding:20px}
-.svc-icon{font-size:26px;margin-bottom:10px}
+.svc-body{padding:20px}.svc-icon{font-size:26px;margin-bottom:8px}
 .svc-body h3{font-size:18px;font-weight:700;color:var(--g1);margin-bottom:8px}
 .svc-body p{font-size:14px;color:var(--muted);line-height:1.75}
-.svc-body ul{margin-top:10px;padding-left:0;list-style:none;display:grid;gap:5px}
+.svc-body ul{margin-top:10px;list-style:none;padding:0;display:grid;gap:5px}
 .svc-body li{font-size:13px;color:var(--muted);padding-left:16px;position:relative}
 .svc-body li::before{content:"✓";position:absolute;left:0;color:var(--g2);font-weight:700}
-/* PRICING */
-.pricing-tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
-.ptab{padding:8px 18px;border-radius:999px;font-size:14px;font-weight:600;background:var(--surf);border:1.5px solid var(--border2);color:var(--muted);cursor:pointer;transition:all .15s}
+/* PRICING TABS */
+.ptabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.ptab{padding:8px 18px;border-radius:999px;font-size:14px;font-weight:600;background:var(--surf);border:1.5px solid var(--b2);color:var(--muted);cursor:pointer;transition:all .15s}
 .ptab.on{background:var(--g1);color:#fff;border-color:var(--g1)}
-.pricing-panel{display:none}.pricing-panel.on{display:block}
-.pricing-wrap{background:var(--surf);border-radius:var(--r);border:1px solid var(--border2);box-shadow:var(--sh-sm);overflow:hidden}
-.pricing-header{background:var(--g1);color:#fff;padding:14px 20px}
-.pricing-header p{font-size:14px;opacity:.85;margin-top:3px}
-table{width:100%;border-collapse:collapse}
-th{background:rgba(22,101,52,.08);padding:12px 16px;text-align:left;font-size:14px;color:var(--g1)}
-td{padding:13px 16px;font-size:14px;border-top:1px solid var(--border2);color:var(--muted)}
-tr:hover td{background:var(--g-soft)}
-.td-em{color:var(--g1);font-weight:700}
-.pricing-tip{padding:12px 20px;background:var(--g-soft);font-size:13px;color:var(--g1);border-top:1px solid var(--border)}
-/* PROCESS */
+.ppanel{display:none}.ppanel.on{display:block}
+.p-box{background:var(--surf);border-radius:var(--r);border:1px solid var(--b2);box-shadow:var(--shsm);overflow:hidden}
+.p-head{background:var(--g1);color:#fff;padding:14px 20px}
+.p-head p{font-size:14px;opacity:.85;margin-top:3px}
+.p-tip{padding:12px 20px;background:var(--gsoft);font-size:13px;color:var(--g1);border-top:1px solid var(--bdr)}
+/* CERTS */
+.cstats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+.cstat{background:var(--surf);border-radius:var(--rsm);padding:20px;text-align:center;border:1px solid var(--b2);box-shadow:var(--shsm)}
+.cstat strong{display:block;font-size:28px;font-weight:700;color:var(--g1);margin-bottom:4px}
+.cstat span{font-size:13px;color:var(--muted)}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+.cert-card{background:var(--surf);border-radius:var(--rsm);border:1px solid var(--b2);padding:14px 16px;display:flex;align-items:center;gap:12px;transition:box-shadow .15s}
+.cert-card:hover{box-shadow:var(--shsm);border-color:var(--bdr)}
+.cert-av{width:40px;height:40px;border-radius:50%;background:var(--g1);color:#fff;font-size:16px;font-weight:700;display:grid;place-items:center;flex-shrink:0}
+.cert-info{flex:1;min-width:0}
+.cert-info strong{display:block;font-size:14px;color:var(--text);margin-bottom:2px}
+.cert-skill{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cert-badge{display:inline-block;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-top:3px;font-weight:600}
+.cert-org{font-size:11px;color:var(--faint);text-align:right;flex-shrink:0;max-width:90px;line-height:1.4}
+.cert-orgs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;justify-content:center}
+.cert-org-tag{background:var(--surf);border:1px solid var(--b2);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted)}
+/* STEPS */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.step{background:var(--surf);border-radius:var(--r);padding:20px;border:1px solid var(--border2);border-top:3px solid var(--g2);box-shadow:var(--sh-sm)}
-.step-n{display:inline-block;background:var(--g-soft);color:var(--g1);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.step{background:var(--surf);border-radius:var(--r);padding:20px;border:1px solid var(--b2);border-top:3px solid var(--g2);box-shadow:var(--shsm)}
+.step-n{display:inline-block;background:var(--gsoft);color:var(--g1);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
 .step h3{font-size:16px;color:var(--g1);margin-bottom:6px}
 .step p{font-size:13px;color:var(--muted);line-height:1.65}
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.info-card{background:var(--surf);border-radius:var(--r);padding:22px;border:1px solid var(--border2);box-shadow:var(--sh-sm)}
-.info-card h3{font-size:16px;color:var(--g1);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--g-mid)}
-.info-row{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--border2);font-size:14px}
+.info-card{background:var(--surf);border-radius:var(--r);padding:22px;border:1px solid var(--b2);box-shadow:var(--shsm)}
+.info-card h3{font-size:16px;color:var(--g1);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gmid)}
+.info-row{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--b2);font-size:14px}
 .info-row:last-child{border-bottom:0}
 .info-row .lbl{min-width:90px;color:var(--faint);flex-shrink:0}
-.gsxt-tip{background:var(--g-soft);border:1px solid var(--g-acc);border-radius:var(--r-xs);padding:12px 18px;font-size:13px;color:var(--g1);margin-top:16px;line-height:1.75}
+.gsxt-tip{background:var(--gsoft);border:1px solid var(--gacc);border-radius:var(--rxs);padding:12px 18px;font-size:13px;color:var(--g1);margin-top:16px;line-height:1.75}
+/* RECRUIT BANNER */
+.rbanner{background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:var(--r);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.rbanner h3{font-family:var(--serif);font-size:22px;color:#fff;margin-bottom:6px}
+.rbanner p{color:rgba(255,255,255,.85);font-size:14px;max-width:48ch}
 /* CONTACT */
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.cinfo{background:var(--surf);border-radius:var(--r);padding:24px;border:1px solid var(--border2);box-shadow:var(--sh-sm)}
-.cinfo h3{font-family:var(--serif);font-size:22px;color:var(--g1);margin-bottom:16px}
-.ci-row{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--border2);font-size:14px}
+.cinfo,.form-box{background:var(--surf);border-radius:var(--r);padding:24px;border:1px solid var(--b2);box-shadow:var(--shsm)}
+.cinfo h3,.form-box h3{font-family:var(--serif);font-size:22px;color:var(--g1);margin-bottom:16px}
+.ci-row{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--b2);font-size:14px}
 .ci-row:last-child{border-bottom:0}
 .ci-row .lbl{min-width:66px;font-size:13px;color:var(--faint);flex-shrink:0}
-.form-box{background:var(--surf);border-radius:var(--r);padding:24px;border:1px solid var(--border2);box-shadow:var(--sh-sm)}
-.form-box h3{font-family:var(--serif);font-size:22px;color:var(--g1);margin-bottom:16px}
-.form-grid{display:grid;gap:12px}
-.form-row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.fg label{display:block;font-size:13px;color:var(--muted);margin-bottom:5px}
-.fg input,.fg textarea,.fg select{width:100%;padding:12px 14px;border:1.5px solid var(--border2);border-radius:12px;background:#fff;font:inherit;font-size:14px;color:var(--text);transition:border .15s}
-.fg input:focus,.fg textarea:focus,.fg select:focus{outline:0;border-color:var(--g2);box-shadow:0 0 0 3px rgba(22,163,74,.1)}
-.fg textarea{min-height:100px;resize:vertical}
-/* RECRUIT BANNER */
-.recruit-banner{background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:var(--r);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.recruit-banner h3{font-family:var(--serif);font-size:22px;color:#fff;margin-bottom:6px}
-.recruit-banner p{color:rgba(255,255,255,.85);font-size:14px;max-width:48ch}
-/* RESPONSIVE */
-@media(max-width:960px){
-  .hero-inner,.about-grid,.contact-wrap{grid-template-columns:1fr}
-  .svc-grid{grid-template-columns:1fr 1fr}.svc-card.wide{grid-column:auto}
-  .steps{grid-template-columns:1fr 1fr}
-}
-@media(max-width:600px){
-  .hero-inner{gap:20px}.svc-grid{grid-template-columns:1fr}
-  .steps,.form-row2{grid-template-columns:1fr}
-  h1{font-size:28px}
-}
-  </style>
+@media(max-width:960px){.hero-inner,.about-grid,.contact-wrap{grid-template-columns:1fr}.svc-grid{grid-template-columns:1fr 1fr}.steps,.cstats{grid-template-columns:1fr 1fr}.cert-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid,.cert-grid{grid-template-columns:1fr}.steps,.cstats,.form-row2{grid-template-columns:1fr}h1{font-size:28px}}
+</style>
 </head>
 <body>
-<a href="index.html#main" class="sr-only" tabindex="0">跳到主要内容</a>
+<a href="#main" class="sr-only" tabindex="0">跳到主要内容</a>
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <div class="brand-logo">
-        <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
-          <path d="M4 4 L10 14 L10 22" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M16 4 L16 22" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
-          <path d="M16 13 L23 7" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
-          <path d="M16 13 L23 20" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
-        </svg>
+      <div class="brand-logo"><img src="image/yklogo.png" alt="益康家政Logo" width="40" height="40" onerror="this.onerror=null;this.parentNode.innerHTML='<svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#166534"/><path d="M10 10 16 22 16 32" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 10v22" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 21l7-7M24 21l7 9" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>'"></div>
+      <div>
+        <div class="brand-name">益康家政</div>
+        <div class="brand-slogan">选益康，更健康</div>
       </div>
-      <div><div class="brand-name">益康家政</div><div class="brand-sub">Yikang Care Service</div></div>
     </a>
     <nav class="nav-links" aria-label="主导航">
       <a href="index.html#services">服务项目</a>
       <a href="index.html#pricing">收费标准</a>
+      <a href="index.html#certs">资质团队</a>
       <a href="index.html#process">接单流程</a>
       <a href="recruit.html">诚聘护工</a>
       <a href="index.html#about">公司资质</a>
       <a href="index.html#contact">联系我们</a>
     </nav>
     <div class="nav-btns">
-      <a class="btn btn-ghost" href="tel:15850301819">📞 158 5030 1819</a>
-      <a class="btn btn-primary" href="index.html#contact">立即咨询</a>
+      <a class="btn btn-g" href="tel:15850301819">📞 158 5030 1819</a>
+      <a class="btn btn-p" href="index.html#contact">立即咨询</a>
     </div>
   </div>
 </header>
 <main id="main">
 
-<!-- HERO -->
+<!-- ═══ HERO ═══ -->
 <section class="hero" id="top">
   <div class="wrap hero-inner">
     <div>
       <div class="hero-tag">📍 昆山第四、第五人民医院 · 养老院 · 居家</div>
-      <h1>专业陪护，让家人放心，<br>让患者安心。</h1>
-      <p class="hero-sub">昆山市益康家政服务有限公司，提供<strong style="color:var(--g1)">医院陪护</strong>、<strong style="color:var(--g1)">住家老人护理</strong>、保洁及家政服务。24小时全年响应，工商注册正规企业，可开具正规税务发票。</p>
+      <h1>专业陪护，让家人<br>放心，患者安心。</h1>
+      <div class="hero-slogan">选益康，更健康！</div>
+      <p class="hero-sub">昆山市益康家政服务有限公司，提供<strong style="color:var(--g1)">医院陪护</strong>、<strong style="color:var(--g1)">住家老人护理</strong>及保洁服务。<strong style="color:var(--g1)">17名持证护工</strong>，专业资质可查，24小时全年响应，可开具正规税务发票。</p>
       <div class="hero-cta">
-        <a class="btn btn-primary btn-xl" href="tel:15850301819">📞 158 5030 1819</a>
-        <a class="btn btn-ghost btn-xl" href="#contact">在线咨询</a>
+        <a class="btn btn-p btn-xl" href="tel:15850301819">📞 158 5030 1819</a>
+        <a class="btn btn-g btn-xl" href="#contact">在线咨询</a>
       </div>
-      <div class="trust-chips">
+      <div class="chips">
         <span class="chip">✅ 24小时服务</span>
         <span class="chip">🧾 可开正规发票</span>
-        <span class="chip">🏥 昆山主要医院覆盖</span>
+        <span class="chip">🏅 17名持证护工</span>
         <span class="chip">🏠 支持住家护理</span>
         <span class="chip">📅 成立2017年</span>
       </div>
     </div>
     <div>
       <div class="hero-card">
-        <div class="hero-img-wrap">
-          <img src="image/ykteam.jpg" alt="益康护工团队服务实景" width="600" height="338" loading="eager">
-          <div class="hero-img-overlay"><span>益康护工团队 · 医院 & 住家陪护服务</span></div>
+        <div class="hero-imgwrap">
+          <img src="image/ykteam.jpg" alt="益康护工团队" width="580" height="326" loading="eager"
+            onerror="this.onerror=null;this.src='https://picsum.photos/seed/nursing-team/580/326'">
+          <div class="hero-overlay"><span>益康护工团队 · 医院 &amp; 住家陪护服务</span></div>
         </div>
-        <div class="contacts-list">
+        <div class="contacts">
           <div class="c-item"><div class="c-dot">👨‍💼</div><div><strong>程经理（负责人）</strong><a href="tel:15850301819">158 5030 1819</a></div></div>
           <div class="c-item"><div class="c-dot">👩</div><div><strong>顾女士（客服）</strong><a href="tel:18662254867">186 6225 4867</a></div></div>
-          <div class="c-item"><div class="c-dot">💬</div><div><strong>微信号</strong><a href="#contact" style="color:var(--g1);font-weight:700">yikangcare</a></div></div>
+          <div class="c-item"><div class="c-dot">💬</div><div><strong>微信号</strong><a href="#contact">yikangcare</a></div></div>
         </div>
-        <div class="invoice-strip">
+        <div class="inv-strip">
           <span style="font-size:20px">🧾</span>
           <div><strong>★ 可提供正规税务发票</strong><br><span>适合医院、养老院、企业单位报销</span></div>
         </div>
@@ -224,7 +248,7 @@ tr:hover td{background:var(--g-soft)}
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- ═══ SERVICES ═══ -->
 <section id="services">
   <div class="wrap">
     <div class="sec-label">服务项目</div>
@@ -232,151 +256,281 @@ tr:hover td{background:var(--g-soft)}
     <p class="sec-sub">无论患者在医院还是回家休养，益康均可提供全程专业照护服务。</p>
     <div class="svc-grid">
       <article class="svc-card">
-        <div class="svc-img"><img src="image/Nursing1.jpg" alt="医院陪护看护" width="600" height="338" loading="lazy"></div>
-        <div class="svc-body">
-          <div class="svc-icon">🏥</div>
-          <h3>医院临床陪诊与看护</h3>
-          <p>1对1专业护工全程在床边陪护，协助患者日常起居、如厕、翻身、饮食照料，让家属安心上班。</p>
-          <ul>
-            <li>覆盖昆山第四、第五人民医院</li>
-            <li>24小时/天 或 日间12小时/天可选</li>
-            <li>直至康复出院，出院结算</li>
-          </ul>
+        <div class="svc-img"><img src="image/Nursing1.jpg" alt="医院陪护" width="580" height="326" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/hospital-care/580/326'"></div>
+        <div class="svc-body"><div class="svc-icon">🏥</div><h3>医院临床陪诊与看护</h3>
+          <p>1对1专业护工全程床边陪护，协助患者日常起居、如厕、翻身、饮食，让家属安心上班。</p>
+          <ul><li>覆盖昆山第四、第五人民医院</li><li>24小时/天 或 日间12小时/天可选</li><li>出院后统一结算，计费从签到起算</li></ul>
         </div>
       </article>
       <article class="svc-card">
-        <div class="svc-img"><img src="image/Nursing2.jpg" alt="住家老人护理" width="600" height="338" loading="lazy"></div>
-        <div class="svc-body">
-          <div class="svc-icon">🏠</div>
-          <h3>住家老人护理</h3>
-          <p>护工驻扎家中，提供24小时住家老人护理服务，包含起居照料、饮食护理、安全看护及合理家务辅助。</p>
-          <ul>
-            <li>护工免费食宿由雇主家庭提供</li>
-            <li>可签三方服务协议，权益有保障</li>
-            <li>如服务不满意可申请调换护工</li>
-          </ul>
+        <div class="svc-img"><img src="image/Nursing2.jpg" alt="住家老人护理" width="580" height="326" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/elderly-home/580/326'"></div>
+        <div class="svc-body"><div class="svc-icon">🏠</div><h3>住家老人护理</h3>
+          <p>护工驻扎家中24小时照护，包含起居、饮食、安全看护及家务辅助，可签三方服务协议。</p>
+          <ul><li>护工免费食宿由雇主家庭提供</li><li>三方协议保障双方权益</li><li>服务不满意可申请调换护工</li></ul>
         </div>
       </article>
       <article class="svc-card">
-        <div class="svc-img"><img src="image/workplace1.jpg" alt="保洁服务" width="600" height="338" loading="lazy"></div>
-        <div class="svc-body">
-          <div class="svc-icon">🧹</div>
-          <h3>各类场所保洁服务</h3>
-          <p>承接医院病区、养老院、企业办公室、住宅小区及工厂的日常清洁与专项保洁，可签定期合同，可开发票。</p>
-          <ul>
-            <li>大小型场所均可承接</li>
-            <li>支持定期/单次保洁合同</li>
-            <li>可提供正规税务发票</li>
-          </ul>
+        <div class="svc-img"><img src="image/workplace1.jpg" alt="保洁服务" width="580" height="326" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/cleaning-service/580/326'"></div>
+        <div class="svc-body"><div class="svc-icon">🧹</div><h3>各类场所保洁服务</h3>
+          <p>承接医院病区、养老院、企业办公室、住宅及工厂的日常清洁与专项保洁，可签定期合同。</p>
+          <ul><li>大小型场所均可承接</li><li>支持定期/单次保洁合同</li><li>可提供正规税务发票</li></ul>
         </div>
       </article>
       <article class="svc-card">
-        <div class="svc-img"><img src="image/Nursing3.jpg" alt="交通事故理赔协助" width="600" height="338" loading="lazy"></div>
-        <div class="svc-body">
-          <div class="svc-icon">⚖️</div>
-          <h3>交通事故伤残鉴定与理赔协助</h3>
-          <p>协助完成伤残等级鉴定、理赔流程对接与材料整理，全程陪同，减轻患者及家属的处理负担。</p>
-          <ul>
-            <li>协助鉴定、材料整理、流程对接</li>
-            <li>全程陪同协助</li>
-            <li>具体事宜请来电咨询</li>
-          </ul>
+        <div class="svc-img"><img src="image/Nursing3.jpg" alt="交通事故理赔协助" width="580" height="326" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/insurance-assist/580/326'"></div>
+        <div class="svc-body"><div class="svc-icon">⚖️</div><h3>交通事故伤残鉴定与理赔协助</h3>
+          <p>协助完成伤残等级鉴定、理赔流程对接与材料整理，全程陪同，减轻患者及家属负担。</p>
+          <ul><li>协助鉴定材料整理、流程对接</li><li>全程陪同，来电咨询详情</li></ul>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing" style="background:var(--surf2)">
+<!-- ═══ PRICING ═══ -->
+<section id="pricing" style="background:#f0fdf4">
   <div class="wrap">
     <div class="sec-label">收费标准</div>
     <h2 class="sec-title">透明定价，按实际服务天数结算</h2>
-    <p class="sec-sub">所有价格均为2022年3月起执行标准，含税开票价与不含税价均列明，无隐藏收费。</p>
-
-    <div class="pricing-tabs">
-      <button class="ptab on" onclick="switchTab(0)">🏥 医院陪护收费</button>
-      <button class="ptab" onclick="switchTab(1)">🏠 住家护理收费</button>
-      <button class="ptab" onclick="switchTab(2)">🧹 保洁服务报价</button>
+    <p class="sec-sub">含税开票价与不含税价均列明，无隐藏收费。</p>
+    <div class="ptabs">
+      <button class="ptab on" onclick="switchTab(0)">🏥 医院陪护</button>
+      <button class="ptab" onclick="switchTab(1)">🏠 住家护理</button>
+      <button class="ptab" onclick="switchTab(2)">🧹 保洁服务</button>
     </div>
-
-    <!-- 医院陪护 -->
-    <div class="pricing-panel on" id="pt0">
-      <div class="pricing-wrap">
-        <div class="pricing-header"><strong>医院1对1陪护收费（生效：2022年3月5日）</strong>
-          <p>以下为客户支付给公司的服务费，护工按实际到岗时间结算，出院后统一结清。</p></div>
-        <table>
-          <thead><tr><th>服务类型</th><th>服务时长</th><th>开票价（含税）</th><th>不开票价</th><th>备注</th></tr></thead>
-          <tbody>
-            <tr><td>24小时全程陪护</td><td>24小时/天</td><td class="td-em">260 元/天</td><td>240 元/天</td><td>全天候1对1专业护理</td></tr>
-            <tr><td>日间专职陪护</td><td>12小时/天</td><td class="td-em">220 元/12h</td><td>200 元/12h</td><td>白班（如8:00-20:00）</td></tr>
-          </tbody>
-        </table>
-        <div class="pricing-tip">
-          💡 <strong>费用包含：</strong>基础生活照料、陪伴看护、协助进食/服药（非专业医疗操作）、个人环境简单清理。<br>
-          💡 <strong>不含：</strong>餐饮费、医疗耗材、外出交通费。法定节假日（如春节）价格可能上浮，请提前沟通。<br>
-          💡 <strong>计费起算：</strong>护工抵达服务地点签到后起算；服务延续到隔天时，隔天从8:00重新计算。
-        </div>
+    <div class="ppanel on" id="pt0">
+      <div class="p-box">
+        <div class="p-head"><strong>医院1对1陪护收费（2022年3月起执行）</strong><p>护工按实际到岗时间结算，出院后统一结清。</p></div>
+        <table><thead><tr><th>服务类型</th><th>时长</th><th>含税开票价</th><th>不开票价</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td>24小时全程陪护</td><td>24小时/天</td><td class="td-em">260 元/天</td><td>240 元/天</td><td>全天候1对1专业护理</td></tr>
+          <tr><td>日间专职陪护</td><td>12小时/天</td><td class="td-em">220 元/12h</td><td>200 元/12h</td><td>如8:00–20:00白班</td></tr>
+        </tbody></table>
+        <div class="p-tip">💡 不含餐饮、医疗耗材及外出交通费。法定节假日价格可能上浮，请提前沟通。</div>
       </div>
     </div>
-
-    <!-- 住家护理 -->
-    <div class="pricing-panel" id="pt1">
-      <div class="pricing-wrap">
-        <div class="pricing-header"><strong>住家老人护理收费说明</strong>
-          <p>护工24小时住家，雇主家庭提供免费食宿，按月结算，可签三方服务协议。</p></div>
-        <table>
-          <thead><tr><th>结算项目</th><th>说明</th></tr></thead>
-          <tbody>
-            <tr><td>劳务报酬</td><td class="td-em">按月协商确定（元/月），合同约定日期前支付</td></tr>
-            <tr><td>食宿费用</td><td>由雇主家庭免费提供（一日三餐 + 独立住宿空间）</td></tr>
-            <tr><td>带薪休息</td><td>每月协商天数，具体由甲乙方安排</td></tr>
-            <tr><td>押金</td><td>合同约定，服务满约后退还</td></tr>
-            <tr><td>三方协议</td><td>公司·雇主·护工三方签约，权益有保障</td></tr>
-          </tbody>
-        </table>
-        <div class="pricing-tip">
-          💡 住家护理价格因护工经验、老人照护难度而有所不同，具体费用请来电程经理（158 5030 1819）咨询。<br>
-          💡 如服务不满意，甲方可向公司申请调换护工（需提前3日书面通知）。
-        </div>
+    <div class="ppanel" id="pt1">
+      <div class="p-box">
+        <div class="p-head"><strong>住家老人护理收费说明</strong><p>护工24小时住家，雇主提供食宿，按月结算，可签三方协议。</p></div>
+        <table><thead><tr><th>结算项目</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>劳务报酬</td><td class="td-em">按月协商，合同约定日期前支付</td></tr>
+          <tr><td>食宿费用</td><td>由雇主家庭免费提供（三餐 + 住宿）</td></tr>
+          <tr><td>三方协议</td><td>公司·雇主·护工三方签约，权益有保障</td></tr>
+        </tbody></table>
+        <div class="p-tip">💡 住家护理价格因护工经验、老人照护难度而不同，请来电程经理（158 5030 1819）咨询。</div>
       </div>
     </div>
-
-    <!-- 保洁 -->
-    <div class="pricing-panel" id="pt2">
-      <div class="pricing-wrap">
-        <div class="pricing-header"><strong>保洁服务报价说明</strong>
-          <p>按场地面积、保洁频次与类型定制报价，欢迎来电了解具体方案。</p></div>
-        <table>
-          <thead><tr><th>服务类型</th><th>适用场所</th><th>计价方式</th></tr></thead>
-          <tbody>
-            <tr><td>日常定期保洁</td><td>医院病区、养老院、办公室、小区</td><td>按月/季度合同，面积计价</td></tr>
-            <tr><td>单次专项保洁</td><td>开荒保洁、装修后保洁、活动清洁</td><td>按次报价，现场勘察定价</td></tr>
-            <tr><td>工厂/仓库保洁</td><td>工业厂区、仓储场所</td><td>按面积+频次定制</td></tr>
-          </tbody>
-        </table>
-        <div class="pricing-tip">💡 保洁服务均可提供正规税务发票，适合企业、医院报销。具体报价请拨打 158 5030 1819 咨询。</div>
+    <div class="ppanel" id="pt2">
+      <div class="p-box">
+        <div class="p-head"><strong>保洁服务报价说明</strong><p>按场地面积、频次与类型定制报价，欢迎来电。</p></div>
+        <table><thead><tr><th>类型</th><th>适用场所</th><th>计价方式</th></tr></thead>
+        <tbody>
+          <tr><td>日常定期保洁</td><td>医院、养老院、办公室</td><td>按月/季度合同</td></tr>
+          <tr><td>单次专项保洁</td><td>开荒、装修后、活动</td><td>按次报价，现场定价</td></tr>
+          <tr><td>工厂/仓库保洁</td><td>厂区、仓储场所</td><td>按面积+频次定制</td></tr>
+        </tbody></table>
+        <div class="p-tip">💡 保洁服务均可提供正规税务发票。具体报价请拨打 158 5030 1819。</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section id="process">
+<!-- ═══ CERTS ═══ -->
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-label">专业资质</div>
+    <h2 class="sec-title">17位持证护工，专业有据可查</h2>
+    <p class="sec-sub">旗下护工均持国家认可的专业证书，涵盖养老护理师、医疗照护、育婴师等多个工种，证书原件可在面谈时查验。</p>
+    <div class="cstats">
+      <div class="cstat"><strong>17</strong><span>名持证护工</span></div>
+      <div class="cstat"><strong>12</strong><span>名高级资质</span></div>
+      <div class="cstat"><strong>6+</strong><span>权威发证机构</span></div>
+      <div class="cstat"><strong>9年</strong><span>昆山深耕经验</span></div>
+    </div>
+    <div class="cert-grid">
+<div class="cert-card">
+  <div class="cert-av">万</div>
+  <div class="cert-info">
+    <strong>万腊梅</strong>
+    <span class="cert-skill">育婴师+母婴护理师</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">大培养机构</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">曹</div>
+  <div class="cert-info">
+    <strong>曹成运</strong>
+    <span class="cert-skill">育婴师+养老护理师</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">育婴师培训中心</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">孔</div>
+  <div class="cert-info">
+    <strong>孔萍</strong>
+    <span class="cert-skill">医疗照护</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">上海专项技能培训中心</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">杨</div>
+  <div class="cert-info">
+    <strong>杨菊萍</strong>
+    <span class="cert-skill">医院陪护/护工</span>
+    <span class="cert-badge" style="background:#92400e">合格</span>
+  </div>
+  <div class="cert-org">苏州市护工协会</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">杨</div>
+  <div class="cert-info">
+    <strong>杨玲</strong>
+    <span class="cert-skill">养老护理员</span>
+    <span class="cert-badge" style="background:#0369a1">中级</span>
+  </div>
+  <div class="cert-org">盐城市社会福利院</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">陈</div>
+  <div class="cert-info">
+    <strong>陈红平</strong>
+    <span class="cert-skill">护工</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">中国人力资源职业技能培训中心</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">刘</div>
+  <div class="cert-info">
+    <strong>刘玉芳</strong>
+    <span class="cert-skill">养老护理师</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">中国管理科学研究院</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">朱</div>
+  <div class="cert-info">
+    <strong>朱志荣</strong>
+    <span class="cert-skill">护工</span>
+    <span class="cert-badge" style="background:#92400e">合格</span>
+  </div>
+  <div class="cert-org">昆山市护理学会</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">潘</div>
+  <div class="cert-info">
+    <strong>潘会</strong>
+    <span class="cert-skill">高级养老护理·医疗照护</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">上海专项技能培训中心</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">温</div>
+  <div class="cert-info">
+    <strong>温所林</strong>
+    <span class="cert-skill">护工</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">国培人力资源管理中心</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">周</div>
+  <div class="cert-info">
+    <strong>周兰</strong>
+    <span class="cert-skill">护工(中医卫生人才)</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">中医卫生人才培训中心</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">陈</div>
+  <div class="cert-info">
+    <strong>陈惠平</strong>
+    <span class="cert-skill">护理</span>
+    <span class="cert-badge" style="background:#92400e">合格</span>
+  </div>
+  <div class="cert-org">江苏省护理学会</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">陈</div>
+  <div class="cert-info">
+    <strong>陈晨</strong>
+    <span class="cert-skill">养老护理师</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">中国商业联合会</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">陈</div>
+  <div class="cert-info">
+    <strong>陈玉红</strong>
+    <span class="cert-skill">护理</span>
+    <span class="cert-badge" style="background:#92400e">合格</span>
+  </div>
+  <div class="cert-org">盐城市人社局</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">孙</div>
+  <div class="cert-info">
+    <strong>孙海英</strong>
+    <span class="cert-skill">护理</span>
+    <span class="cert-badge" style="background:#92400e">合格</span>
+  </div>
+  <div class="cert-org">江苏省护理学会</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">陈</div>
+  <div class="cert-info">
+    <strong>陈秀芹</strong>
+    <span class="cert-skill">护工</span>
+    <span class="cert-badge" style="background:#92400e">合格</span>
+  </div>
+  <div class="cert-org">苏州市护工协会</div>
+</div>
+<div class="cert-card">
+  <div class="cert-av">李</div>
+  <div class="cert-info">
+    <strong>李存兰</strong>
+    <span class="cert-skill">养老护理师</span>
+    <span class="cert-badge" style="background:#166534">高级</span>
+  </div>
+  <div class="cert-org">人力资源培训保障协会</div>
+</div>
+    </div>
+    <div class="cert-orgs">
+      <span class="cert-org-tag">🏛 苏州市护工协会</span>
+      <span class="cert-org-tag">🏛 昆山市护理学会</span>
+      <span class="cert-org-tag">🏛 江苏省护理学会</span>
+      <span class="cert-org-tag">🏛 上海专项技能培训中心</span>
+      <span class="cert-org-tag">🏛 中国人力资源职业技能培训中心</span>
+      <span class="cert-org-tag">🏛 中医卫生人才培训中心</span>
+    </div>
+    <p style="text-align:center;margin-top:12px;font-size:13px;color:var(--faint)">证书原件可在面谈时出示查验</p>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section id="process" style="background:#f0fdf4">
   <div class="wrap">
     <div class="sec-label">接单流程</div>
     <h2 class="sec-title">4步预约，快速安排上岗</h2>
     <div class="steps">
       <div class="step"><div class="step-n">01</div><h3>联系我们</h3><p>电话或微信联系程经理（158 5030 1819），说明服务类型：医院/住家/保洁。</p></div>
-      <div class="step"><div class="step-n">02</div><h3>确认需求</h3><p>说明医院或地址、患者情况、照护时长、是否需要发票等基本信息。</p></div>
+      <div class="step"><div class="step-n">02</div><h3>确认需求</h3><p>说明医院或地址、患者情况、照护时长，以及是否需要开具发票。</p></div>
       <div class="step"><div class="step-n">03</div><h3>签协议到岗</h3><p>按需签署住院看护协议或住家护理三方协议，确认到岗时间及收费方式。</p></div>
       <div class="step"><div class="step-n">04</div><h3>服务与结算</h3><p>护工到岗服务，出院/服务结束后统一结算，可开具正规增值税发票。</p></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" style="background:var(--surf2)">
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
   <div class="wrap">
     <div class="sec-label">公司资质</div>
     <h2 class="sec-title">正规注册企业，工商可查</h2>
@@ -394,35 +548,33 @@ tr:hover td{background:var(--g-soft)}
       </div>
       <div class="info-card">
         <h3>服务承诺（节选）</h3>
-        <div class="info-row"><span class="lbl">资质培训</span><span>所有护工经过专业培训，具备护理知识和技能</span></div>
-        <div class="info-row"><span class="lbl">素质保证</span><span>护工具备良好道德品质，无犯罪记录</span></div>
+        <div class="info-row"><span class="lbl">资质培训</span><span>所有护工经过专业培训，具备护理知识和操作技能</span></div>
+        <div class="info-row"><span class="lbl">素质保证</span><span>护工具备良好道德品质，无不良犯罪记录</span></div>
         <div class="info-row"><span class="lbl">隐私保护</span><span>严格保护患者个人信息和隐私权益</span></div>
-        <div class="info-row"><span class="lbl">24h热线</span><span>设立24小时服务热线，随时响应</span></div>
-        <div class="info-row"><span class="lbl">定期回访</span><span>定期对医院和患者进行回访，持续改进服务</span></div>
+        <div class="info-row"><span class="lbl">24h热线</span><span>设立24小时服务热线，随时响应紧急需求</span></div>
+        <div class="info-row"><span class="lbl">定期回访</span><span>定期回访患者和医院，持续改进服务质量</span></div>
         <div class="info-row"><span class="lbl">应急预案</span><span>突发事件迅速启动应急预案，确保患者安全</span></div>
       </div>
     </div>
-    <div class="gsxt-tip">
-      🔍 可登录<strong>国家企业信息公示系统</strong>（<a href="http://www.gsxt.gov.cn" target="_blank" rel="noopener noreferrer" style="color:var(--g2)">www.gsxt.gov.cn</a>）查询公司注册备案信息。统一信用代码：<strong>91320583MA1T60CC2J</strong>
-    </div>
+    <div class="gsxt-tip">🔍 可登录<strong>国家企业信息公示系统</strong>（<a href="http://www.gsxt.gov.cn" target="_blank" rel="noopener noreferrer" style="color:var(--g2)">www.gsxt.gov.cn</a>）查询备案信息。统一信用代码：<strong>91320583MA1T60CC2J</strong></div>
   </div>
 </section>
 
-<!-- RECRUIT BANNER -->
-<section>
+<!-- ═══ RECRUIT BANNER ═══ -->
+<section style="background:#f0fdf4">
   <div class="wrap">
-    <div class="recruit-banner">
+    <div class="rbanner">
       <div>
-        <h3>【招工】护工 · 保洁人员 持续招募中</h3>
-        <p>照顾1位患者 180-200元/天，干满30天≥4,800元；同时照顾2人≥9,600元，多劳多得，符合条件当天上岗。</p>
+        <h3>【招工】护工·保洁人员持续招募中</h3>
+        <p>照顾1位患者180–200元/天，干满30天≥4,800元；同时照顾2人≈9,600元，多劳多得，符合条件当天上岗。</p>
       </div>
-      <a class="btn btn-orange btn-lg" href="recruit.html" target="_blank" rel="noopener">查看招聘详情 →</a>
+      <a class="btn btn-o" style="padding:14px 24px;font-size:15px;flex-shrink:0" href="recruit.html">查看招聘详情 →</a>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" style="background:var(--surf2)">
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
   <div class="wrap">
     <div class="sec-label">联系我们</div>
     <h2 class="sec-title">随时联系，快速安排</h2>
@@ -435,19 +587,19 @@ tr:hover td{background:var(--g-soft)}
         <div class="ci-row"><span class="lbl">微信</span><strong>yikangcare</strong></div>
         <div class="ci-row"><span class="lbl">邮箱</span>YikangCare@qq.com</div>
         <div class="ci-row"><span class="lbl">地址</span>昆山开发区前进东路1111号113室</div>
-        <div class="ci-row"><span class="lbl">服务区域</span>昆山第四人民医院、第五人民医院、养老院及周边居家</div>
-        <div class="ci-row"><span class="lbl">服务时间</span><span style="color:var(--g1);font-weight:700">24小时全年</span></div>
+        <div class="ci-row"><span class="lbl">服务范围</span>昆山第四、第五人民医院及周边居家</div>
+        <div class="ci-row"><span class="lbl">服务时间</span><span style="color:var(--g1);font-weight:700">24小时 · 全年无休</span></div>
         <div class="ci-row"><span class="lbl">发票</span><span style="color:#92400e;font-weight:600">✅ 可开具正规增值税发票</span></div>
       </div>
       <div class="form-box">
         <h3>在线需求提交</h3>
         <form class="form-grid" onsubmit="handleForm(event)">
           <div class="form-row2">
-            <div class="fg"><label for="f-name">您的称呼</label><input id="f-name" type="text" placeholder="请输入称呼" required></div>
-            <div class="fg"><label for="f-tel">联系电话</label><input id="f-tel" type="tel" placeholder="请输入手机号" required></div>
+            <div class="fg"><label for="fn">您的称呼</label><input id="fn" type="text" placeholder="请输入称呼" required></div>
+            <div class="fg"><label for="ft">联系电话</label><input id="ft" type="tel" placeholder="请输入手机号" required></div>
           </div>
-          <div class="fg"><label for="f-type">服务类型</label>
-            <select id="f-type">
+          <div class="fg"><label for="ftp">服务类型</label>
+            <select id="ftp">
               <option>医院临床陪诊与看护（24小时）</option>
               <option>医院临床陪诊与看护（日间12小时）</option>
               <option>住家老人护理</option>
@@ -456,11 +608,11 @@ tr:hover td{background:var(--g-soft)}
               <option>其他咨询</option>
             </select>
           </div>
-          <div class="fg"><label for="f-msg">需求说明</label>
-            <textarea id="f-msg" placeholder="例如：昆山第四人民医院骨科，需24小时护工1名；或：家中老人行动不便，需住家护理…"></textarea>
+          <div class="fg"><label for="fm">需求说明</label>
+            <textarea id="fm" placeholder="如：昆山第四人民医院骨科，需24小时护工1名；或：家中老人行动不便，需住家护理…"></textarea>
           </div>
-          <button class="btn btn-primary" type="submit" style="width:100%;padding:14px;border-radius:14px;font-size:15px" id="f-btn">提交需求</button>
-          <p id="f-tip" style="display:none;color:var(--g1);font-size:13px;text-align:center;padding:4px 0">✅ 提交成功！我们将尽快联系您。紧急需求请直接拨打 158 5030 1819。</p>
+          <button class="btn btn-p" type="submit" style="width:100%;padding:14px;border-radius:14px;font-size:15px" id="fb">提交需求</button>
+          <p id="ftip" style="display:none;color:var(--g1);font-size:13px;text-align:center">✅ 提交成功！我们将尽快联系您。紧急需求请直接拨打 158 5030 1819。</p>
         </form>
       </div>
     </div>
@@ -472,8 +624,9 @@ tr:hover td{background:var(--g-soft)}
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-col">
-        <h4>昆山市益康家政</h4>
-        <p>成立于2017年，专注昆山地区<br>医院陪护、住家护理、保洁及家政服务。</p>
+        <div class="foot-brand"><img src="image/yklogo.png" alt="益康" width="36" height="36" onerror="this.onerror=null;this.parentNode.innerHTML='<svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#166534"/><path d="M10 10 16 22 16 32" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 10v22" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 21l7-7M24 21l7 9" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>'"><span>益康家政</span></div>
+        <div class="foot-slogan">选益康，更健康</div>
+        <p>成立于2017年，专注昆山地区医院陪护、住家护理、保洁及家政服务。17名持证专业护工，24小时全年响应。</p>
         <p style="margin-top:8px">统一信用代码：91320583MA1T60CC2J</p>
         <p style="margin-top:8px"><a href="recruit.html" style="color:#86efac;font-weight:700">→ 正在招聘护工/保洁人员</a></p>
       </div>
@@ -493,31 +646,18 @@ tr:hover td{background:var(--g-soft)}
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 昆山市益康家政服务有限公司 · 24小时服务</span>
+      <span>© 2026 昆山市益康家政服务有限公司 · 选益康，更健康</span>
       <span>本网站提供家政陪护服务，非医疗诊疗行为。</span>
     </div>
   </div>
 </footer>
-<div class="call-bar" role="complementary" aria-label="快捷联系">
+<div class="call-bar" role="complementary">
   <a class="call" href="tel:15850301819">📞 立即拨打</a>
   <a class="wx" href="weixin://contacts/profile/yikangcare">💬 微信咨询</a>
 </div>
-
 <script>
-function switchTab(i){
-  document.querySelectorAll('.ptab').forEach((t,j)=>t.classList.toggle('on',i===j));
-  document.querySelectorAll('.pricing-panel').forEach((p,j)=>p.classList.toggle('on',i===j));
-}
-function handleForm(e){
-  e.preventDefault();
-  var n=document.getElementById('f-name').value,t=document.getElementById('f-tel').value,
-      tp=document.getElementById('f-type').value,m=document.getElementById('f-msg').value;
-  var body='【益康家政在线需求】\n姓名：'+n+'\n电话：'+t+'\n服务类型：'+tp+'\n需求说明：'+m;
-  window.location.href='mailto:YikangCare@qq.com?subject=益康家政在线咨询&body='+encodeURIComponent(body);
-  document.getElementById('f-tip').style.display='block';
-  document.getElementById('f-btn').textContent='已提交 ✓';
-  document.getElementById('f-btn').disabled=true;
-}
+function switchTab(i){document.querySelectorAll('.ptab').forEach(function(t,j){t.classList.toggle('on',i===j)});document.querySelectorAll('.ppanel').forEach(function(p,j){p.classList.toggle('on',i===j)})};
+function handleForm(e){e.preventDefault();var n=document.getElementById('fn').value,t=document.getElementById('ft').value,tp=document.getElementById('ftp').value,m=document.getElementById('fm').value;var b='【益康家政在线需求】\n姓名：'+n+'\n电话：'+t+'\n服务类型：'+tp+'\n需求说明：'+m;window.location.href='mailto:YikangCare@qq.com?subject=益康家政在线咨询&body='+encodeURIComponent(b);document.getElementById('ftip').style.display='block';document.getElementById('fb').textContent='已提交 ✓';document.getElementById('fb').disabled=true};
 </script>
 </body>
 </html>
