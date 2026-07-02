@@ -1,0 +1,11 @@
+/* TEAM */
+Owner: 昆山市益康家政服务有限公司
+Contact: 程经理 158-5030-1819
+Location: 昆山开发区前进东路1111号113室
+
+/* SITE */
+Language: 中文 (zh-CN)
+Standards: HTML5, CSS3
+Components: Vanilla JavaScript
+Software: VS Code
+Last update: 2026-07-02

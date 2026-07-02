@@ -1,0 +1,11 @@
+# Cloudflare Pages 重定向规则
+# 统一使用 https://yikangcare.com
+
+# www 跳转非 www
+https://www.yikangcare.com/* https://yikangcare.com/:splat 301!
+
+# 路径统一：/index.html -> /
+/index.html / 301!
+
+# 自定义 404
+/* /404.html 404

@@ -1,0 +1,19 @@
+{
+  "name": "昆山市益康家政服务有限公司",
+  "short_name": "益康家政",
+  "description": "昆山专业医院陪护、住家老人护理、场所保洁服务，17名持证护工，24小时响应。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0fdf4",
+  "theme_color": "#166534",
+  "orientation": "portrait-primary",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

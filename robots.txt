@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+
+Sitemap: https://yikangcare.com/sitemap.xml
+
+# 国内搜索引擎爬虫
+User-agent: Baiduspider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Sogou inst spider
+Allow: /
+
+User-agent: Yisouspider
+Allow: /
+
+User-agent: Bingbot
+Allow: /
