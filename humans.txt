@@ -8,4 +8,4 @@ Language: 中文 (zh-CN)
 Standards: HTML5, CSS3
 Components: Vanilla JavaScript
 Software: VS Code
-Last update: 2026-07-02
+Last update: 2026-07-08

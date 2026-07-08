@@ -10,6 +10,8 @@
 
 ```
 index.html              ← 官网首页（服务概览·资质·流程·联系）
+blog/index.html         ← 护理知识资讯列表页
+blog/*.html             ← 护理知识文章页
 hospital-care.html      ← 医院陪护详情页
 home-care.html          ← 住家老人护理详情页
 cleaning.html           ← 保洁服务详情页
@@ -72,6 +74,13 @@ image/                  ← 图片资源
 | 服务场景图库 | `image/Nursing1.jpg`、`image/Nursing2.jpg`、`image/Nursing3.jpg`、`image/workplace1.jpg` |
 | 公司资质与品牌展示 | `image/ykhonor.jpg`、`image/ykbusiness-card.png`、`image/yklogo.png` |
 | 暂未上屏备用 | `image/office.png`、`image/other*.jpg`、`image/workplace*.jpg` |
+
+## 最近优化
+
+- 图片压缩：总大小减少约 6 MB，加载速度显著提升。
+- 页面结构：整理 blog 文章到 `blog/` 目录，修复 `index.html` 为官网首页。
+- SEO 统一：所有页面补齐 keywords、author、Open Graph、Twitter Card、favicon、manifest、sitemap 引用。
+- 链接修复：统一 canonical 与内部链接到 `https://yikangcare.com`，修复子目录页面相对路径。
 
 ## 已做优化
 

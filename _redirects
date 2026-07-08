@@ -7,5 +7,8 @@ https://www.yikangcare.com/* https://yikangcare.com/:splat 301!
 # 路径统一：/index.html -> /
 /index.html / 301!
 
+# 旧 blog.html 统一跳转到 blog/index.html
+/blog.html /blog/index.html 301!
+
 # 自定义 404
 /* /404.html 404
