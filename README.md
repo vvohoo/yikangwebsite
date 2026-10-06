@@ -17,12 +17,18 @@ home-care.html          ← 住家老人护理详情页
 cleaning.html           ← 保洁服务详情页
 insurance-assist.html   ← 交通事故伤残鉴定与理赔协助详情页
 recruit.html            ← 招聘页面（护工·保洁招聘）
+privacy.html            ← 隐私政策
 404.html                ← 自定义 404 页面
+assets/site.css|site.js ← 全站共享样式与脚本
+functions/api/leads.js  ← 表单后端（Cloudflare Pages Function）
+partials/               ← 页头/页脚模板（node tools/sync-partials.mjs 同步到各页面）
+README-DEPLOY.md        ← 部署、表单配置、本地测试与上线前确认清单（必读）
 robots.txt              ← 搜索引擎爬虫规则
 sitemap.xml             ← 站点地图
 humans.txt              ← 站点作者信息
 manifest.json           ← PWA / 移动端配置
-favicon.svg             ← 网站图标
+favicon-yikangcare.svg  ← 网站图标（当前品牌标识）
+favicon.svg             ← 旧图标（保留兼容，不再引用）
 _redirects              ← Cloudflare Pages 重定向规则
 _headers                ← Cloudflare Pages HTTP 响应头
 image/                  ← 图片资源
@@ -60,7 +66,8 @@ image/                  ← 图片资源
 
 ## 微信生态衔接（规划中）
 
-- **企业微信**：`yikangcare`（已启用，可添加咨询）
+- **程经理个人微信**：`yikangcare`（已启用，网站展示二维码与微信号）
+- **企业微信**：筹备中
 - **微信视频号**：筹备中，计划发布护理技巧、招聘通知、服务案例
 - **微信小程序**：筹备中，计划支持在线预约护工、查看护工资质、领取优惠券
 
@@ -70,10 +77,15 @@ image/                  ← 图片资源
 
 | 用途 | 文件 |
 |---|---|
-| 首屏团队实景 | `image/ykteam.jpg` |
-| 服务场景图库 | `image/Nursing1.jpg`、`image/Nursing2.jpg`、`image/Nursing3.jpg`、`image/workplace1.jpg` |
-| 公司资质与品牌展示 | `image/ykhonor.jpg`、`image/ykbusiness-card.png`、`image/yklogo.png` |
-| 暂未上屏备用 | `image/office.png`、`image/other*.jpg`、`image/workplace*.jpg` |
+| 首屏团队实景 | `image/team-kunshan-yikang-*.webp/.jpg`（由 `ykteam.jpg` 压缩生成） |
+| 护理知识卡片 | `image/blog/*.webp/.jpg`（由 `workplace1–3.jpg`、`ykteam.jpg`、`office.png` 裁切压缩） |
+| 分享卡片 | `image/og-cover.jpg`（1200×630） |
+| 品牌标识 | `favicon-yikangcare.svg`、`image/yikangcare-brand-mark.png`、`image/yikangcare-brand-mark-96.png/.webp`、`image/yikangcare-app-icon-192/512.png`、`image/yikangcare-apple-touch-icon.png` |
+| 微信二维码与头像 | `image/wechat-cheng-manager-qr.png`、`image/wechat-cheng-manager-avatar-192.jpg/.webp` |
+| 旧图标（仅保留兼容，页面不再引用） | `favicon.svg`、`image/yklogo.png`、`image/yklogo-96.*` |
+| 未上屏（含可辨认的患者/家属，或二维码有效性未确认） | `image/ykhonor.jpg`、`image/Nursing*.jpg`、`image/other*.jpg`、`image/workplace4–6.jpg` |
+| 素材原件（不被页面引用） | `image/yikangcare business card1.jpg`、`image/yikangcare business card2.jpg`、`image/wechat profile picture.jpg` |
+| 原图备份（不被页面引用） | `image/ykteam.jpg`、`image/office.png`、`image/workplace1–3.jpg` |
 
 ## 最近优化
 
@@ -89,7 +101,6 @@ image/                  ← 图片资源
 - ✅ 每个页面添加 `canonical` 规范链接、Open Graph / Twitter Card 分享卡片。
 - ✅ 添加 `robots.txt` 与 `sitemap.xml`，引导百度、360、搜狗、必应等爬虫收录。
 - ✅ 添加 `LocalBusiness`、`Service`、`JobPosting`、`BreadcrumbList`、`FAQPage` 等 Schema.org 结构化数据。
-- ✅ 添加百度、360、搜狗、必应站长平台验证代码占位。
 - ✅ 添加 `favicon.svg`、`manifest.json`、`humans.txt` 等站点身份标识。
 - ✅ 修复首屏 Logo 区域异常 HTML 标签。
 - ✅ 所有图片均设置 `alt` 属性，利于图片搜索。
@@ -100,16 +111,13 @@ image/                  ← 图片资源
 - ✅ Cloudflare Pages `_redirects`（www 跳转、HTTPS 统一、/index.html 跳转）。
 - ✅ Cloudflare Pages `_headers`，配置安全头与静态资源长期缓存。
 - ✅ 移动端底部固定快捷联系栏、导航折叠、价格表横向滚动等体验优化。
-- ✅ 表单提交生成邮件咨询内容。
+- ✅ 表单通过 `/api/leads` 提交到 webhook（需配置 `LEADS_WEBHOOK_URL`，见 README-DEPLOY.md）；未配置时如实提示，不显示成功。
 
 ## 上线前待办
 
 1. **搜索引擎站长验证**
    - 登录 [百度站长平台](https://ziyuan.baidu.com/)、[360 站长平台](https://zhanzhang.so.com/)、[搜狗站长平台](https://zhanzhang.sogou.com/)、[必应站长平台](https://www.bing.com/webmasters/)。
-   - 将各自提供的验证代码替换所有 HTML 页面中对应的占位文字：
-     ```html
-     <meta name="baidu-site-verification" content="请将此处替换为百度站长验证码">
-     ```
+   - 拿到验证码后，把对应的 `<meta>` 标签加到 `index.html` 的 `<head>` 中（原先的占位标签已删除）。
 
 2. **提交站点地图**
    在各站长平台提交：
@@ -129,17 +137,17 @@ image/                  ← 图片资源
    - 可在「联系我们」区域添加微信二维码图片。
 
 5. **后续可进一步提升**
-   - 接入真实表单后端（Formspree / Cloudflare Forms / 微信小程序接口）。
    - 替换或补充更多真实服务场景照片。
    - 为各重点镇区单独创建落地页（如 `/lujia.html`、`/qiandeng.html`），进一步抢占本地搜索流量。
 
 ## 本地预览
 
 ```bash
-python -m http.server 8000 --bind 127.0.0.1
+npx wrangler pages dev .
 ```
 
-打开 http://127.0.0.1:8000 预览。
+打开 http://127.0.0.1:8788 预览（需要 Node.js 22+）。站内链接使用无 `.html` 的网址，
+`python -m http.server` 无法正确预览。表单测试方法见 README-DEPLOY.md。
 
 ---
 

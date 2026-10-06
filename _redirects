@@ -1,14 +1,10 @@
-# Cloudflare Pages 重定向规则
-# 统一使用 https://yikangcare.com
+# Cloudflare Pages 重定向规则（语法：来源 目标 状态码；状态码仅支持 200/301/302/303/307/308）
+#
+# 以下行为由 Cloudflare Pages 自动完成，无需也不能在此配置：
+#   · /xxx.html → /xxx、/index.html → /、/blog/index.html → /blog/ （308）
+#   · 不存在的路径返回根目录 404.html（HTTP 404）
+# www.yikangcare.com → yikangcare.com 的跳转不能写在本文件（不支持带域名的规则），
+#   请在 Cloudflare 控制台用 Redirect Rules / Bulk Redirects 配置，见 README-DEPLOY.md。
 
-# www 跳转非 www
-https://www.yikangcare.com/* https://yikangcare.com/:splat 301!
-
-# 路径统一：/index.html -> /
-/index.html / 301!
-
-# 旧 blog.html 统一跳转到 blog/index.html
-/blog.html /blog/index.html 301!
-
-# 自定义 404
-/* /404.html 404
+# 旧的 /blog（由 blog.html 提供）统一到护理知识列表页
+/blog /blog/ 301

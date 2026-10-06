@@ -10,9 +10,21 @@
   "lang": "zh-CN",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/favicon-yikangcare.svg",
       "sizes": "any",
       "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/image/yikangcare-app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/image/yikangcare-app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

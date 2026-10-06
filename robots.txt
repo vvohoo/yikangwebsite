@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /private/
 Disallow: /temp/
+Disallow: /api/
+Disallow: /partials/
+Disallow: /tools/
 
 Sitemap: https://yikangcare.com/sitemap.xml
 

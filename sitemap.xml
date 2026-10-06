@@ -5,74 +5,80 @@
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://yikangcare.com/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/hospital-care.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/hospital-care</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/home-care.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/home-care</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/cleaning.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/cleaning</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/insurance-assist.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/insurance-assist</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/recruit.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/recruit</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/blog/index.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/blog/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/blog/bedridden-turning-guide.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/blog/bedridden-turning-guide</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/blog/hospital-care-cost-guide.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/blog/hospital-care-cost-guide</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/blog/kunshan-no4-hospital-guide.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/blog/kunshan-no4-hospital-guide</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/blog/elderly-daily-care-tips.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/blog/elderly-daily-care-tips</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yikangcare.com/blog/choose-right-caregiver.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://yikangcare.com/blog/choose-right-caregiver</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yikangcare.com/privacy</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
